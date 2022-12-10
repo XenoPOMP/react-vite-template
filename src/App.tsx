@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './assets/components/Layout/Layout';
+import MainPage from './assets/pages/MainPage/MainPage';
+import NotFound from './assets/pages/NotFound';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path={'/'} element={<Layout />} />
+        <Route path={'*'} element={<NotFound />} />
+
+        <Route path={'/'} element={<MainPage />} />
       </Routes>
     </Router>
   );
