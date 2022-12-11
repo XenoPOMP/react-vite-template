@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './assets/pages/MainPage/MainPage';
-import NotFound from './assets/pages/NotFound';
+import NotFound from './assets/pages/NotFound/NotFound';
 
 function App() {
   return (

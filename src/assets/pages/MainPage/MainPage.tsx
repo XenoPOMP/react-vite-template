@@ -3,9 +3,9 @@ import Page from '../../components/Page/Page';
 
 const MainPage = () => {
   return (
-    <Page meta={{ pageTitle: 'Main', pageDescription: '', keywords: '' }}>
-      Main page
-    </Page>
+    <Page
+      meta={{ pageTitle: 'Main', pageDescription: '', keywords: '' }}
+    ></Page>
   );
 };
 
