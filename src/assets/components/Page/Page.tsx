@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { PageProps } from './Page.props';
-import Layout from '../Layout/Layout';
-import MetaTitle from '../MetaTitle/MetaTitle';
+import Layout from '@components/Layout/Layout';
+import MetaTitle from '@components/MetaTitle/MetaTitle';
 
 const Page: FC<PageProps> = ({ meta, children }) => {
   return (

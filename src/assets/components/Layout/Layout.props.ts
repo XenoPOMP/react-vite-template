@@ -1,3 +1,3 @@
-import { ReactChildrenProps } from '../../interfaces/ReactChildren.props';
+import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
 
-export interface LayoutProps extends ReactChildrenProps {}
+export interface LayoutProps extends SimpleReactComponent {}

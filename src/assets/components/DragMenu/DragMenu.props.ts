@@ -1,7 +1,6 @@
-import { ReactChildrenProps } from '../../interfaces/ReactChildren.props';
-import { HTMLAttributes } from 'react';
+import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
 
-export interface DragMenuProps extends ReactChildrenProps {
+export interface DragMenuProps extends SimpleReactComponent {
   classNames?: {
     constraint?: string,
     draggable?: string,

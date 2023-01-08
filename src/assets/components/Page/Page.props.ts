@@ -1,6 +1,6 @@
-import { ReactChildrenProps } from '../../interfaces/ReactChildren.props';
+import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
 
-export interface PageProps extends ReactChildrenProps {
+export interface PageProps extends SimpleReactComponent {
   meta: {
     pageTitle: string,
     pageDescription?: string,
