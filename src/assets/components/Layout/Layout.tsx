@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { LayoutProps } from './Layout.props';
+import GlobalProvider from '@providers/GlobalProvider/GlobalProvider';
 
 const Layout: FC<LayoutProps> = ({ children }) => {
-  return <>{children}</>;
+  return <GlobalProvider>{children}</GlobalProvider>;
 };
 
 export default Layout;

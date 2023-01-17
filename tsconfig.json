@@ -21,7 +21,8 @@
       "@interfaces/*": ["src/assets/interfaces/*"],
       "@pages/*": ["src/assets/pages/*"],
       "@redux/*": ["src/assets/redux/*"],
-      "@styles/*": ["src/assets/styles/*"]
+      "@styles/*": ["src/assets/styles/*"],
+      "@providers/*": ["src/assets/providers/*"]
     }
   },
   "include": ["src"],
