@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { MetaTitleProps } from './MetaTitle.props';
 // @ts-ignore
 import DocumentMeta from 'react-document-meta';

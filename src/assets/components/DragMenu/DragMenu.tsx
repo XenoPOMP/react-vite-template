@@ -1,4 +1,4 @@
-import React, { FC, useRef } from 'react';
+import { FC, useRef } from 'react';
 import { DragMenuProps } from './DragMenu.props';
 import { motion } from 'framer-motion';
 
