@@ -1,8 +1,10 @@
-import { combineReducers, createStore } from 'redux';
-import { sampleReducer } from './reducer-list';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import toolkitSlice from '@redux/reducers/toolkitSlice';
 
 const rootReducer = combineReducers({
-  sample: sampleReducer,
+  toolkit: toolkitSlice,
 });
 
-export const store = createStore(rootReducer);
+export const store = configureStore({
+  reducer: rootReducer,
+});
