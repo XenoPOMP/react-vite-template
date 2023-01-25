@@ -22,7 +22,10 @@
       "@pages/*": ["src/assets/pages/*"],
       "@redux/*": ["src/assets/redux/*"],
       "@styles/*": ["src/assets/styles/*"],
-      "@providers/*": ["src/assets/providers/*"]
+      "@providers/*": ["src/assets/providers/*"],
+      "@ui/*": ["src/assets/components/ui/*"],
+      "@hooks/*": ["src/assets/hooks/*"],
+      "@types/*": ["src/assets/types/*"],
     }
   },
   "include": ["src"],
