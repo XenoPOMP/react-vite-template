@@ -1,14 +1,13 @@
 import Page from '@components/Page/Page';
 import styles from './HookTestingPage.module.scss';
 import cn from 'classnames';
-import { useLocalStorage } from '@hooks/useLocalStorage/useLocalStorage';
+import { useLocalStorage } from '@hooks/useLocalStorage';
 import { useRef, useState } from 'react';
 
 const HookTestingPage = () => {
-  const [localStorage, setLocalStorage] = useLocalStorage({
-    name: 'test_local_storage',
-    defaultItem: 0,
-  });
+  // prettier-ignore
+  const [localStorage, setLocalStorage] = useLocalStorage<number>('testing-hooks', 12);
+
   const [localStorageState, setLocalStorageState] = useState(localStorage);
 
   return (
@@ -25,7 +24,7 @@ const HookTestingPage = () => {
               type={'text'}
               value={localStorageState}
               onChange={(event) => {
-                setLocalStorageState(event.target.value);
+                setLocalStorageState(parseInt(event.target.value));
               }}
             />
             <button
