@@ -3,12 +3,14 @@ import styles from './HookTestingPage.module.scss';
 import cn from 'classnames';
 import { useLocalStorage } from '@hooks/useLocalStorage';
 import { useRef, useState } from 'react';
+import { useCookie } from '@hooks/useCookie';
 
 const HookTestingPage = () => {
-  // prettier-ignore
-  const [localStorage, setLocalStorage] = useLocalStorage<number>('testing-hooks', 12);
-
+  const [localStorage, setLocalStorage] =
+    useLocalStorage < number > ('testing-hooks', 12);
   const [localStorageState, setLocalStorageState] = useState(localStorage);
+
+  const [getCookie, setCookie] = useCookie < number > ('cookie-testing', 123);
 
   return (
     <Page
@@ -40,6 +42,12 @@ const HookTestingPage = () => {
             <label>Local storage content: </label>
             <div>{localStorage}</div>
           </div>
+        </section>
+
+        <section>
+          <h2>useCookie hook</h2>
+
+          <div>Value from cookie: {getCookie}</div>
         </section>
       </div>
     </Page>
