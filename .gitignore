@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Ignored folders inside project
+./src/assets/pages/Testing
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
