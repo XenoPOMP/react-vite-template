@@ -26,6 +26,7 @@
       "@ui/*": ["src/assets/components/ui/*"],
       "@hooks/*": ["src/assets/hooks/*"],
       "@types/*": ["src/assets/types/*"],
+      "@utils/*": ["src/assets/utils/*"],
     }
   },
   "include": ["src"],
