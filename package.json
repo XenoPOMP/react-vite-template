@@ -1,7 +1,7 @@
 {
   "name": "react-vite-template",
   "private": true,
-  "version": "0.2.4",
+  "version": "0.2.5",
   "type": "module",
   "homepage": "./",
   "scripts": {
@@ -23,6 +23,7 @@
     "redux": "^4.2.0",
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
+    "that-sparks": "^0.1.8",
     "universal-cookie": "^4.0.4"
   },
   "devDependencies": {

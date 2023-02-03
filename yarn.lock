@@ -1062,6 +1062,17 @@ framer-motion@^8.4.3:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
+framer-motion@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-9.0.1.tgz#0b63c22bdde1c38ce8da88141bb81ef0137c68e9"
+  integrity sha512-0EP7+b/hnsbrFOum9zU+23Fq2cJJrLOqv/yJ26fIzK4CC33ZAjXZGi1/XyblbgnUF0cxZ/SEDj5IYHeQo42qNg==
+  dependencies:
+    "@motionone/dom" "^10.15.3"
+    hey-listen "^1.0.8"
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 fs-minipass@^2.0.0, fs-minipass@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-2.1.0.tgz#7f5036fdbf12c63c169190cbe4199c852271f9fb"
@@ -1956,6 +1967,11 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
+random-js@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/random-js/-/random-js-2.1.0.tgz#0c03238b0a4f701f7a4c7303036ade3083d8ee14"
+  integrity sha512-CRUyWmnzmZBA7RZSVGq0xMqmgCyPPxbiKNLFA5ud7KenojVX2s7Gv+V7eB52beKTPGxWRnVZ7D/tCIgYJJ8vNQ==
+
 react-document-meta@^3.0.0-beta.2:
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/react-document-meta/-/react-document-meta-3.0.0-beta.2.tgz#4a4b4c0b18277e4707d13ede163536ba216d5956"
@@ -2420,6 +2436,18 @@ tar@^6.0.2, tar@^6.1.11, tar@^6.1.2:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
+
+that-sparks@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/that-sparks/-/that-sparks-0.1.8.tgz#324b2b321132d1b54ddc46e21bfc7d90e12a762d"
+  integrity sha512-rqvo2Q7mDiw2a3B18MFxjW35K6odbIu4SqupIvPmt04NCO6UtrJTHxDnTB3E1btvwWRYAlpAETmT3d5tzgzGbg==
+  dependencies:
+    classnames "^2.3.2"
+    framer-motion "^9.0.1"
+    node-sass "^8.0.0"
+    random-js "^2.1.0"
+    react "^18.2.0"
+    sass-loader "^13.2.0"
 
 through@^2.3.6:
   version "2.3.8"
