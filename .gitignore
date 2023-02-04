@@ -13,7 +13,8 @@ dist-ssr
 *.local
 
 # Vitest
-./coverage
+/coverage
+!/coverage/
 
 # Ignored folders inside project
 ./src/assets/pages/Testing
@@ -28,4 +29,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-!/coverage/
