@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Vitest
+./coverage
+
 # Ignored folders inside project
 ./src/assets/pages/Testing
 
