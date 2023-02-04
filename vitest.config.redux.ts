@@ -1,6 +1,6 @@
 import { mergeConfig } from 'vite';
-import { configDefaults, defineConfig } from 'vitest/config';
 import viteConfig from './vite.config';
+import { configDefaults, defineConfig } from 'vitest/config';
 
 export default mergeConfig(
   viteConfig,
@@ -9,7 +9,7 @@ export default mergeConfig(
       exclude: [
         ...configDefaults.exclude,
         'packages/template/*',
-        'tests/redux/*',
+        'tests/app/*',
       ],
     },
   }),
