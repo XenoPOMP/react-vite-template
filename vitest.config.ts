@@ -6,11 +6,7 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      exclude: [
-        ...configDefaults.exclude,
-        'packages/template/*',
-        'tests/redux/*',
-      ],
+      exclude: [...configDefaults.exclude, 'packages/template/*'],
     },
   }),
 );
