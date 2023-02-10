@@ -27,6 +27,7 @@
       "@hooks/*": ["src/assets/hooks/*"],
       "@types/*": ["src/assets/types/*"],
       "@utils/*": ["src/assets/utils/*"],
+      "@media/*": ["src/media/*"]
     }
   },
   "include": ["src"],
