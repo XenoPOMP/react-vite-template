@@ -16,9 +16,7 @@ const getUiSx = (gridSettings: GridSettings): CSSProperties => {
   } = gridSettings;
 
   const getMaxWidth = (): string | undefined => {
-    if (maxWidth === undefined) return undefined;
-
-    if (maxWidth === 'unset') return maxWidth;
+    if (maxWidth === 'unset' || maxWidth === undefined) return maxWidth;
 
     return `${maxWidth}px`;
   }
