@@ -1,8 +1,11 @@
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Page from '@components/Page/Page';
+import useEnv from '@hooks/useEnv';
 
-describe('Page component', () => {
+const { TESTING_MODE } = useEnv();
+
+describe.skipIf(TESTING_MODE === 'BACKEND')('Page component', () => {
   test('Child render', () => {
     render(
       <Page meta={{ pageTitle: 'Testing', pageDescription: '', keywords: '' }}>

@@ -3,8 +3,11 @@ import { render, screen } from '@testing-library/react';
 import ThemeProvider from '@providers/ThemeProvider/ThemeProvider';
 import cn from 'classnames';
 import styles from '@providers/ThemeProvider/ThemeProvider.module.scss';
+import useEnv from '@hooks/useEnv';
 
-describe('Theme Provider', () => {
+const { TESTING_MODE } = useEnv();
+
+describe.skipIf(TESTING_MODE === 'BACKEND')('Theme Provider', () => {
   test('Classname', () => {
     render(<ThemeProvider />);
 
