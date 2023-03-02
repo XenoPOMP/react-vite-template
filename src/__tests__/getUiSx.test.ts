@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import getUiSx from '@utils/getUiSx/getUiSx';
+import getUiSx from '@utils/getUiSx';
 
 describe('Get UI styles', () => {
   test('return default items if args are not defined', () => {

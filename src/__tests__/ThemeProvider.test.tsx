@@ -2,7 +2,7 @@ import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import ThemeProvider from '@providers/ThemeProvider/ThemeProvider';
 import cn from 'classnames';
-import styles from './ThemeProvider.module.scss';
+import styles from '@providers/ThemeProvider/ThemeProvider.module.scss';
 
 describe('Theme Provider', () => {
   test('Classname', () => {
