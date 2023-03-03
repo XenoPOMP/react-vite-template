@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK vitest run --coverage"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
