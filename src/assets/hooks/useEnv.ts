@@ -1,6 +1,8 @@
+export type TestingMode = 'FRONTEND' | 'BACKEND' | 'FULLSTACK';
+
 export type Env = {
   API_URL?: string,
-  TESTING_MODE?: 'FRONTEND' | 'BACKEND' | 'FULLSTACK',
+  TESTING_MODE?: TestingMode,
 };
 
 const useEnv = (): Env => {

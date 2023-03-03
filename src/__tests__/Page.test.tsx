@@ -1,11 +1,9 @@
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Page from '@components/Page/Page';
-import useEnv from '@hooks/useEnv';
+import skipTestCondition from '@utils/skipTestCondition';
 
-const { TESTING_MODE } = useEnv();
-
-describe.skipIf(TESTING_MODE === 'BACKEND')('Page component', () => {
+describe.skipIf(skipTestCondition('FRONTEND'))('Page component', () => {
   test('Child render', () => {
     render(
       <Page meta={{ pageTitle: 'Testing', pageDescription: '', keywords: '' }}>

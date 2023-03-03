@@ -1,11 +1,9 @@
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Layout from '@components/Layout/Layout';
-import useEnv from '@hooks/useEnv';
+import skipTestCondition from '@utils/skipTestCondition';
 
-const { TESTING_MODE } = useEnv();
-
-describe.skipIf(TESTING_MODE === 'BACKEND')('App layout', () => {
+describe.skipIf(skipTestCondition('FRONTEND'))('App layout', () => {
   test('Render child', () => {
     render(<Layout>Testing: 12</Layout>);
 

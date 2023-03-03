@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import getUiSx from '@utils/getUiSx';
-import useEnv from '@hooks/useEnv';
+import skipTestCondition from '@utils/skipTestCondition';
 
 //
 // Функция getUiSx должна возращать объект с
@@ -15,9 +15,7 @@ import useEnv from '@hooks/useEnv';
 //                     пикселях
 //
 
-const { TESTING_MODE } = useEnv();
-
-describe.skipIf(TESTING_MODE === 'BACKEND')('Get UI styles', () => {
+describe.skipIf(skipTestCondition('FRONTEND'))('Get UI styles', () => {
   test('return default items if args are not defined', () => {
     // Ожидаем, что при передачи пустого объекта с настройками
     // функция вернет дефолтные значения

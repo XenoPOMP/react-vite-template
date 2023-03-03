@@ -1,13 +1,11 @@
 import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ThemeProvider from '@providers/ThemeProvider/ThemeProvider';
 import cn from 'classnames';
 import styles from '@providers/ThemeProvider/ThemeProvider.module.scss';
-import useEnv from '@hooks/useEnv';
+import skipTestCondition from '@utils/skipTestCondition';
 
-const { TESTING_MODE } = useEnv();
-
-describe.skipIf(TESTING_MODE === 'BACKEND')('Theme Provider', () => {
+describe.skipIf(skipTestCondition('FRONTEND'))('Theme Provider', () => {
   test('Classname', () => {
     render(<ThemeProvider />);
 
