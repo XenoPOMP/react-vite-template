@@ -9,6 +9,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
+    "test:frontend": "cross-env VITE_TESTING_MODE=FRONTEND yarn test",
+    "test:backend": "cross-env VITE_TESTING_MODE=BACKEND yarn test",
+    "test:fullstack": "cross-env VITE_TESTING_MODE=FULLSTACK yarn test",
     "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK vitest run --coverage"
   },
   "dependencies": {
