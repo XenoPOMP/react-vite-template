@@ -1,10 +1,12 @@
-import { ToolkitState } from '@redux/types/toolkit-reducer-types';
+import { AppSettings } from '@redux/reducers/appSettingsSlice';
 
-export type StoreType = {
-  toolkit: ToolkitState,
-};
+interface IStore {
+  appSettings: AppSettings;
+}
 
 export type ReduxAction<A> = {
   payload: A,
   type: string,
 };
+
+export default IStore;
