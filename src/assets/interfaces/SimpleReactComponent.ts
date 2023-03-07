@@ -3,5 +3,5 @@ import { CSSProperties, ReactNode } from 'react';
 export interface SimpleReactComponent {
   children?: ReactNode;
   className?: string;
-  sx?: CSSProperties;
+  style?: CSSProperties;
 }

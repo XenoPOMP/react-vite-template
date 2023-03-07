@@ -1,13 +1,10 @@
-import { CSSProperties, ReactNode } from 'react';
+import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
 
-export interface RunningLineProps {
-  children?: ReactNode;
-  className?: string;
-  style?: CSSProperties;
+export interface RunningLineProps extends SimpleReactComponent {
   behavior?: 'scroll' | 'slide' | 'alternate';
   direction?: 'left' | 'right' | 'up' | 'down';
   loop?: boolean;
   scrollSpeed?: number;
   scrollDelay?: number;
-  verticalAlign: boolean;
+  verticalAlign?: boolean;
 }
