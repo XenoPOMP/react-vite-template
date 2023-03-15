@@ -1,15 +1,15 @@
-.progressive {
-  --blur-value: 10px;
+@import "src/assets/styles/templates";
 
-  object-fit: cover;
-  object-position: center;
+.loader {
+  @extend %flexCenter;
 
-  &.loading {
-    filter: blur(var(--blur-value));
-  }
+  width: 100%;
+  height: 100%;
+  background: var(--loader-background);
 
-  &.loaded {
-    filter: blur(0);
-    transition: .3s ease;
+  svg.circleLoader {
+    g path {
+      fill: var(--loader-color);
+    }
   }
 }

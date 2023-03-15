@@ -1,11 +1,11 @@
 import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
-import { CSSProperties } from 'react';
 
-export interface ProgressiveImageProps {
+export interface ProgressiveImageProps
+  extends Pick<SimpleReactComponent, 'className'> {
+  src?: string;
   alt?: string;
-  src: string;
-  placeholderSrc: string;
-  className?: string;
-  sx?: CSSProperties;
-  blur?: number;
+  loaderColorScheme: {
+    backgroundColor: string,
+    loaderColor: string,
+  };
 }

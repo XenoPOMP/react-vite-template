@@ -1,51 +1,42 @@
 import cn from 'classnames';
-import { CSSProperties, FC, useEffect, useState } from "react";
+import { CSSProperties, FC, ReactElement, useEffect, useState } from 'react';
 import styles from './ProgressiveImage.module.scss';
 import { ProgressiveImageProps } from './ProgressiveImage.props';
+import useProgressiveImage from '@ohs/use-progressive-image';
+import CircleLoader from '@ui/CircleLoader/CircleLoader';
 
 const ProgressiveImage: FC<ProgressiveImageProps> = ({
   src,
-  placeholderSrc,
   alt,
   className,
-  sx,
-  blur
+  loaderColorScheme,
 }) => {
-  // Error handling
-  useEffect(() => {
-    if (alt === undefined) {
-      console.warn('It`s recommended to provide alt to img tag');
-    }
-  }, []);
+  const getInlineVariables = (): CSSProperties => {
+    const { backgroundColor, loaderColor } = loaderColorScheme;
 
-  // prettier-ignore
-  const [imageSrc, setImageSrc] = useState<string>(placeholderSrc);
-  let loadingStateClass =
-    imageSrc === placeholderSrc ? styles.loading : styles.loaded;
-  // Load full quality image
-  useEffect(() => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => {
-      setImageSrc(src);
-    };
-  }, [src]);
-
-  const getFullSx = (): CSSProperties => {
     return {
-      ...sx,
-      '--blur-value': blur ? `${blur}px` : '10px'
+      '--loader-background': backgroundColor,
+      '--loader-color': loaderColor
     } as CSSProperties;
   };
 
-  return (
-    <img
-      className={cn(className, styles.progressive, loadingStateClass)}
-      style={getFullSx()}
-      alt={alt || ''}
-      src={imageSrc}
-    />
+  const [loading] = useProgressiveImage({ img: src });
+  // prettier-ignore
+  const [element, setElement] = useState<ReactElement>(
+    <div style={getInlineVariables()} className={cn(styles.loader)}>
+      <CircleLoader className={cn(styles.circleLoader)} />
+    </div>
   );
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = src ? src : '';
+    img.onload = () => {
+      setElement(<img className={cn(className)} src={src} alt={alt} />);
+    };
+  }, [src]);
+
+  return element;
 };
 
 export default ProgressiveImage;
