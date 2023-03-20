@@ -4,7 +4,9 @@ import cn from 'classnames';
 import styles from './ThemeProvider.module.scss';
 
 const ThemeProvider: FC<ProviderProps> = ({ children }) => {
-  return <div className={cn(styles.themes, styles.dark)}>{children}</div>;
+  document.body.className = cn(styles.themes, styles.dark);
+
+  return <>{children}</>;
 };
 
 export default ThemeProvider;
