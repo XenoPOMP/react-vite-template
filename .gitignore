@@ -15,6 +15,7 @@ dist-ssr
 # Vitest
 coverage/*
 **/__snapshots__/*
+*.snap
 
 # Editor directories and files
 .vscode/*
