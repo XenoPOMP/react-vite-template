@@ -2,7 +2,6 @@ import cn from 'classnames';
 import { CSSProperties, FC, ReactElement, useEffect, useState } from 'react';
 import styles from './ProgressiveImage.module.scss';
 import { ProgressiveImageProps } from './ProgressiveImage.props';
-import useProgressiveImage from '@ohs/use-progressive-image';
 import CircleLoader from '@ui/CircleLoader/CircleLoader';
 
 const ProgressiveImage: FC<ProgressiveImageProps> = ({
@@ -20,7 +19,6 @@ const ProgressiveImage: FC<ProgressiveImageProps> = ({
     } as CSSProperties;
   };
 
-  const [loading] = useProgressiveImage({ img: src });
   // prettier-ignore
   const [element, setElement] = useState<ReactElement>(
     <div style={getInlineVariables()} className={cn(styles.loader)}>
