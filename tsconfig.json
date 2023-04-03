@@ -29,6 +29,7 @@
       "@utils/*": ["src/assets/utils/*"],
       "@media/*": ["src/media/*"],
       "@services/*": ["src/services/*"],
+      "@errors/*": ["src/assets/errors/*"],
     }
   },
   "include": ["src"],
