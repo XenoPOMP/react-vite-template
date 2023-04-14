@@ -13,9 +13,10 @@ dist-ssr
 *.local
 
 # Vitest
-coverage/*
-**/__snapshots__/*
+coverage/**
+**/__snapshots__/**
 *.snap
+**/*timestamp*
 
 # Editor directories and files
 .vscode/*
