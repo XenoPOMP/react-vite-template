@@ -1,8 +1,8 @@
-class ArgumentError extends Error {
-  constructor(msg: string) {
-    super(`Argument error: ${msg}`);
+import { CustomError } from 'ts-custom-error';
 
-    Object.setPrototypeOf(this, ArgumentError.prototype);
+class ArgumentError extends CustomError {
+  public constructor(msg?: string) {
+    super(msg);
   }
 }
 

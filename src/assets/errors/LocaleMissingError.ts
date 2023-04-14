@@ -1,8 +1,8 @@
-class LocaleMissingError extends Error {
-  constructor(msg: string) {
-    super(`Missing locale: ${msg}`);
+import { CustomError } from 'ts-custom-error';
 
-    Object.setPrototypeOf(this, LocaleMissingError.prototype);
+class LocaleMissingError extends CustomError {
+  constructor(msg: string) {
+    super(`missing locale [${msg}]`);
   }
 }
 
