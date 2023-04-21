@@ -1,3 +1,3 @@
-import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
+import { PropsWithChildren } from 'react';
 
-export interface ProviderProps extends SimpleReactComponent {}
+export interface ProviderProps extends PropsWithChildren<{}> {}
