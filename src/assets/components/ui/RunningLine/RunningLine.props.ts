@@ -1,10 +1,12 @@
-import { SimpleReactComponent } from '@interfaces/SimpleReactComponent';
+import { CSSProperties } from 'react';
 
-export interface RunningLineProps extends SimpleReactComponent {
-  behavior?: 'scroll' | 'slide' | 'alternate';
-  direction?: 'left' | 'right' | 'up' | 'down';
-  loop?: boolean;
-  scrollSpeed?: number;
-  scrollDelay?: number;
-  verticalAlign?: boolean;
+export interface RunningLineProps {
+	behavior?: 'scroll' | 'slide' | 'alternate';
+	direction?: 'left' | 'right' | 'up' | 'down';
+	loop?: boolean;
+	scrollSpeed?: number;
+	scrollDelay?: number;
+	verticalAlign?: boolean;
+	style?: CSSProperties;
+	className?: string;
 }
