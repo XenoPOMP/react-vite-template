@@ -91,7 +91,7 @@ const Loader: FC<LoaderProps> = ({ type, className, mainColor }) => {
 				</div>
 			)}
 
-			{type === 'vertical-lines' && (
+			{type === 'wave' && (
 				<div
 					style={
 						{
