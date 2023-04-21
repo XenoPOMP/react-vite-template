@@ -18,7 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/assets/components/*"],
-      "@interfaces/*": ["src/assets/interfaces/*"],
+      "@contexts/*": ["src/assets/contexts/*"],
       "@pages/*": ["src/assets/pages/*"],
       "@redux/*": ["src/assets/redux/*"],
       "@styles/*": ["src/assets/styles/*"],

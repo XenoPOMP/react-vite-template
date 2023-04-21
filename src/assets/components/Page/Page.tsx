@@ -1,19 +1,21 @@
-import { FC } from 'react';
-import { PageProps } from './Page.props';
+import { FC, PropsWithChildren } from 'react';
+
 import Layout from '@components/Layout/Layout';
 import MetaTitle from '@components/MetaTitle/MetaTitle';
 
-const Page: FC<PageProps> = ({ meta, children }) => {
-  return (
-    <Layout>
-      <MetaTitle
-        pageTitle={meta.pageTitle}
-        pageDescription={meta.pageDescription}
-        keywords={meta.keywords}
-      />
-      {children}
-    </Layout>
-  );
+import { PageProps } from './Page.props';
+
+const Page: FC<PropsWithChildren<PageProps>> = ({ meta, children }) => {
+	return (
+		<Layout>
+			<MetaTitle
+				pageTitle={meta.pageTitle}
+				pageDescription={meta.pageDescription}
+				keywords={meta.keywords}
+			/>
+			{children}
+		</Layout>
+	);
 };
 
 export default Page;
