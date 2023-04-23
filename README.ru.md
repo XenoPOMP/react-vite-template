@@ -1,5 +1,14 @@
 <h1 align='center'>React Vite template</h1>
 
+<p align='center'>
+<a href="https://github.com/XenoPOMP/react-vite-template/releases/"><img src="https://img.shields.io/github/release/XenoPOMP/react-vite-template?include_prereleases=&sort=semver&color=blue" alt="GitHub release"></a>
+</p>
+
+<p align='center'>
+<a href="https://github.com/XenoPOMP/react-vite-template/generate"><img src="https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge" alt="Use this template"></a>
+</p>
+<hr>
+
 <p align="center">
 <a href="https://nodejs.org/en"><img src="https://img.shields.io/static/v1?label=&message=Node.js&color=%23339933&style=for-the-badge&logo=Node.js&logoColor=white" alt="Node.js"></a>
 <a href="https://yarnpkg.com/"><img src="https://img.shields.io/static/v1?label=&message=yarn&color=%232C8EBB&style=for-the-badge&logo=yarn&logoColor=white" alt="yarn"></a>
@@ -21,7 +30,6 @@
 <a href="https://sass-lang.com/"><img src="https://img.shields.io/static/v1?label=&message=sass&color=%23CC6699&logo=sass&logoColor=white" alt="sass"></a>
 <a href="https://socket.io"><img src="https://img.shields.io/static/v1?label=&message=socket.io&color=%23010101&logo=socketdotio" alt="socket.io"></a>
 </p>
-
 <hr>
 
 <h2 align="center">Начало работы</h2>

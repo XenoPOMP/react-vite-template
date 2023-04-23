@@ -1,9 +1,7 @@
-<h1 align='center'>React Vite template</h1>
+<h1 align='center'>React Vite template </h1>
 
 <p align='center'>
-<a href="https://github.com/XenoPOMP/react-vite-template" title="Go to GitHub repo"><img src="https://img.shields.io/static/v1?label=XenoPOMP&message=react-vite-template&color=blue&logo=github" alt="XenoPOMP - react-vite-template"></a>
-<a href="https://github.com/XenoPOMP/react-vite-template"><img src="https://img.shields.io/github/stars/XenoPOMP/react-vite-template?style=social" alt="stars - react-vite-template"></a>
-<a href="https://github.com/XenoPOMP/react-vite-template"><img src="https://img.shields.io/github/forks/XenoPOMP/react-vite-template?style=social" alt="forks - react-vite-template"></a>
+<a href="https://github.com/XenoPOMP/react-vite-template/releases/"><img src="https://img.shields.io/github/release/XenoPOMP/react-vite-template?include_prereleases=&sort=semver&color=blue" alt="GitHub release"></a>
 </p>
 
 <p align='center'>
@@ -32,7 +30,6 @@
 <a href="https://sass-lang.com/"><img src="https://img.shields.io/static/v1?label=&message=sass&color=%23CC6699&logo=sass&logoColor=white" alt="sass"></a>
 <a href="https://socket.io"><img src="https://img.shields.io/static/v1?label=&message=socket.io&color=%23010101&logo=socketdotio" alt="socket.io"></a>
 </p>
-
 <hr>
 
 <h2 align="center">Getting started</h2>
