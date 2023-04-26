@@ -1,12 +1,19 @@
-import { FC } from 'react';
-import { ProviderProps } from '@providers/Provider.props';
 import cn from 'classnames';
+import { FC, useContext, useEffect } from 'react';
+
+import { BodyClassnameContext } from '@providers/BodyClassnameProvider/BodyClassnameProvider';
+import { ProviderProps } from '@providers/Provider.props';
+
 import styles from './ThemeProvider.module.scss';
 
 const ThemeProvider: FC<ProviderProps> = ({ children }) => {
-  document.body.className = cn(styles.themes, styles.dark);
+	const classContext = useContext(BodyClassnameContext);
 
-  return <>{children}</>;
+	useEffect(() => {
+		classContext.addClassName([styles.themes, styles.dark]);
+	}, []);
+
+	return <>{children}</>;
 };
 
 export default ThemeProvider;
