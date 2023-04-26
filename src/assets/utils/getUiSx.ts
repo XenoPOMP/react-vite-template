@@ -21,10 +21,10 @@ const getUiSx = (gridSettings: GridSettings): CSSProperties => {
 	};
 
 	return {
-		'--cols': cols ? cols : 5,
+		'--cols': cols ? cols : 12,
 		'--rows': rows ? rows : 1,
-		'--gap': gap !== undefined ? `${gap}px` : '20px',
-		'--max-width': getMaxWidth() ? getMaxWidth() : '1920px',
+		'--gap': gap,
+		'--max-width': getMaxWidth() ? getMaxWidth() : '1680px',
 	} as CSSProperties;
 };
 
