@@ -1,8 +1,6 @@
-import { CSSProperties } from 'react';
-
 import { GridSettings } from '@utils/getUiSx';
 
 export interface UiGridProps extends GridSettings {
+	id?: string;
 	className?: string;
-	style?: CSSProperties;
 }
