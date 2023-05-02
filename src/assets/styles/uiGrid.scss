@@ -10,5 +10,5 @@
   grid-template-rows: repeat(var(--rows), 1fr);
   grid-column-gap: var(--gap);
   grid-row-gap: var(--gap);
-  gap: var(--gap);
+  gap: clamp(var(--gap) / 2, 5vw, var(--gap));
 }
