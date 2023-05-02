@@ -1,0 +1,7 @@
+.dragElement {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
