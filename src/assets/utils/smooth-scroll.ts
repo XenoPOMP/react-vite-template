@@ -1,4 +1,4 @@
-import { Easing } from 'framer-motion';
+import { EasingDefinition } from 'framer-motion';
 import { scroller } from 'react-scroll';
 
 import ArgumentError from '@errors/ArgumentError';
@@ -8,7 +8,7 @@ export const smoothScroll = (
 	props?: {
 		duration?: number;
 		delay?: number;
-		ease?: Easing;
+		ease?: EasingDefinition;
 		offset?: number;
 	}
 ) => {
