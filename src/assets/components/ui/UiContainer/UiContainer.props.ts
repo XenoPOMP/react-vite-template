@@ -1,6 +1,4 @@
-import { CSSProperties } from 'react';
-
 export interface UiContainerProps {
+	id?: string;
 	className?: string;
-	style?: CSSProperties;
 }
