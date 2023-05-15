@@ -5,6 +5,14 @@ import { FC, PropsWithChildren, useRef } from 'react';
 import styles from './DragMenu.module.scss';
 import type { DragMenuProps } from './DragMenu.props';
 
+/**
+ * Draggable component.
+ *
+ * @param children
+ * @param classNames
+ * @param {"x"|"y"} axis
+ * @constructor
+ */
 const DragMenu: FC<PropsWithChildren<DragMenuProps>> = ({
 	children,
 	classNames,

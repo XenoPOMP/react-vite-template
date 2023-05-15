@@ -7,6 +7,14 @@ import numericGenerator from '@utils/numericGenerator';
 import styles from './Loader.module.scss';
 import type { LoaderProps } from './Loader.props';
 
+/**
+ * Loader component.
+ *
+ * @param type
+ * @param className
+ * @param mainColor         color of loader.
+ * @constructor
+ */
 const Loader: FC<LoaderProps> = ({ type, className, mainColor }) => {
 	return (
 		<>

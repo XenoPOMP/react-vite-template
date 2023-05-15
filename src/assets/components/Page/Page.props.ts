@@ -1,7 +1,5 @@
+import { MetaInfo } from '@components/MetaTitle/MetaInfo';
+
 export interface PageProps {
-	meta: {
-		pageTitle: string;
-		pageDescription?: string;
-		keywords: string;
-	};
+	meta: MetaInfo;
 }
