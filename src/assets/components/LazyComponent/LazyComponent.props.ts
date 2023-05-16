@@ -1,6 +1,8 @@
 import { ComponentType, ReactNode } from 'react';
 
+import { EsmImport } from '@type/EsmImport';
+
 export interface LazyComponentProps {
-	element: () => Promise<{ default: ComponentType<any> }>;
+	element: EsmImport;
 	fallback: ReactNode;
 }

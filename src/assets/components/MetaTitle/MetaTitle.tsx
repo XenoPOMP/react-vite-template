@@ -2,13 +2,19 @@ import { FC } from 'react';
 // @ts-ignore
 import DocumentMeta from 'react-document-meta';
 
-import { MetaTitleProps } from './MetaTitle.props';
+import { MetaInfo } from './MetaInfo';
 
-const MetaTitle: FC<MetaTitleProps> = ({
-	pageTitle,
-	pageDescription,
-	keywords,
-}) => {
+/**
+ * Document meta component.
+ *
+ * Adds meta tags like page-title etc. to the <head/>.
+ *
+ * @param {string} pageTitle                  title of page.
+ * @param {string} [pageDescription]					description of page.
+ * @param {string} keywords										keywords of page.
+ * @constructor
+ */
+const MetaTitle: FC<MetaInfo> = ({ pageTitle, pageDescription, keywords }) => {
 	const meta = {
 		title: pageTitle,
 		description: pageDescription,

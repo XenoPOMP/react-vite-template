@@ -4,6 +4,13 @@ import { FC } from 'react';
 
 import { CircleLoaderProps } from './CircleLoader.props';
 
+/**
+ * @deprecated
+ * please, use <Loader /> instead.
+ *
+ * @param className
+ * @constructor
+ */
 const CircleLoader: FC<CircleLoaderProps> = ({ className }) => {
 	return (
 		<motion.svg

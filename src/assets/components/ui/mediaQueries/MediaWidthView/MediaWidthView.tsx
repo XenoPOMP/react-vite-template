@@ -5,6 +5,16 @@ import ArgumentError from '@errors/ArgumentError';
 
 import { MediaWidthViewProps } from './MediaWidthView.props';
 
+/**
+ * Media query component.
+ *
+ * It does not work in Vitest virtual dom.
+ *
+ * @param children
+ * @param {number} [maxWidth]    maximum width in pixels.
+ * @param {number} [minWidth]    minimum width in pixels.
+ * @constructor
+ */
 const MediaWidthView: FC<PropsWithChildren<MediaWidthViewProps>> = ({
 	children,
 	maxWidth,

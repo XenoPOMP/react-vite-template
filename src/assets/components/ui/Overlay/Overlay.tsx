@@ -9,6 +9,16 @@ interface OverlayStyles extends CSSProperties {
 	'--blur-color'?: string;
 }
 
+/**
+ * Overlay component.
+ *
+ * @param className
+ * @param backdrop			backdrop blur options.
+ * @param trigger				trigger to appear.
+ * @param flexCenter    if true, applies flex center to overlay.
+ * @param children
+ * @constructor
+ */
 const Overlay: FC<PropsWithChildren<OverlayProps>> = ({
 	className,
 	backdrop,

@@ -2,6 +2,9 @@ import { CSSProperties } from 'react';
 
 type MaxWidth = number | 'unset';
 
+/**
+ * This type defines grid settings.
+ */
 export type GridSettings = {
 	cols?: number;
 	rows?: number;
@@ -9,6 +12,10 @@ export type GridSettings = {
 	maxWidth?: MaxWidth;
 };
 
+/**
+ * Creates style object with CSS-variables
+ * including grid settings.
+ */
 const getUiSx = (gridSettings: GridSettings): CSSProperties => {
 	const { cols, rows, maxWidth, gap } = gridSettings;
 

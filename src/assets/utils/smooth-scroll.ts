@@ -3,6 +3,15 @@ import { scroller } from 'react-scroll';
 
 import ArgumentError from '@errors/ArgumentError';
 
+/**
+ * Proceeds smooth scroll to DOM element by id.
+ *
+ * You can manage scroll animation params.
+ *
+ * @param {string} id   ID of the element to be scrolled to
+ * @param [props]       animation parameters
+ * @returns {void}
+ */
 export const smoothScroll = (
 	id: string,
 	props?: {
