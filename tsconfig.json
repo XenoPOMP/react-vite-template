@@ -18,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/assets/components/*"],
+      "@api/*": ["src/assets/api"],
       "@contexts/*": ["src/assets/contexts/*"],
       "@pages/*": ["src/assets/pages/*"],
       "@redux/*": ["src/assets/redux/*"],
@@ -28,7 +29,6 @@
       "@type/*": ["src/assets/types/*"],
       "@utils/*": ["src/assets/utils/*"],
       "@media/*": ["src/media/*"],
-      "@services/*": ["src/services/*"],
       "@errors/*": ["src/assets/errors/*"],
     }
   },
