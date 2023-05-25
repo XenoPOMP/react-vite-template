@@ -7,7 +7,11 @@ import styles from './MainPage.module.scss';
 const MainPage = () => {
 	return (
 		<Page
-			meta={{ pageTitle: 'Main', pageDescription: '', keywords: '' }}
+			meta={{
+				pageTitle: 'Main',
+				pageDescription: 'Some description',
+				keywords: '',
+			}}
 		></Page>
 	);
 };
