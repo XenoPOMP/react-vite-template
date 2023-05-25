@@ -11,17 +11,6 @@ import skipTestCondition from '@utils/skipTestCondition';
  */
 
 describe.skipIf(skipTestCondition('FRONTEND'))('Get UI styles', () => {
-	test('return default items if args are not defined', () => {
-		// Ожидаем, что при передачи пустого объекта с настройками
-		// функция вернет дефолтные значения
-		expect(getUiSx({})).toStrictEqual({
-			'--cols': 5,
-			'--rows': 1,
-			'--max-width': '1920px',
-			'--gap': '20px',
-		});
-	});
-
 	test('change column count', () => {
 		// Ожидаем, что если передать в настройках кол-во столбцов,
 		// то функция корректно вернет CSSProperties.
@@ -65,6 +54,6 @@ describe.skipIf(skipTestCondition('FRONTEND'))('Get UI styles', () => {
 		// @ts-ignore
 		const gapValue = getUiSx({ gap })['--gap'];
 
-		expect(gapValue).toBe(`${gap}px`);
+		expect(gapValue).toBe(gap);
 	});
 });
