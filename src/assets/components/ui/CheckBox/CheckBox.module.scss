@@ -1,0 +1,32 @@
+@import "src/assets/styles/templates";
+
+label.checkBoxLabel {
+  @extend %notSelectable;
+
+  $markPadding: 1.2em;
+
+  // padding-left: $markPadding;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  column-gap: .2em;
+
+  input.boxInput {
+    @include appearance(none);
+    position: absolute;
+  }
+
+  span.mark {
+    display: flex;
+    align-content: center;
+
+    svg {
+      height: 1em;
+      margin: auto 0;
+
+      rect.outline {
+        opacity: 0;
+      }
+    }
+  }
+}
