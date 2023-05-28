@@ -1,0 +1,12 @@
+@import "src/assets/styles/templates";
+
+select.select {
+  @include appearance(none);
+
+  position: relative;
+  background: none;
+  border-radius: .25em;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+}

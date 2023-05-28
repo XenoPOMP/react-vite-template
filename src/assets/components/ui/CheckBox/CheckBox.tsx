@@ -97,10 +97,13 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 							stroke='#0066FF'
 						/>
 						<path
-							d='M6 8.00003L9.00001 11L8.00001 12L5 9.00003L6 8.00003Z'
+							d='M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z'
 							fill='white'
 						/>
-						<path d='M13 7L9.00001 11L7.99999 10L12 6L13 7Z' fill='white' />
+						<path
+							d='M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z'
+							fill='white'
+						/>
 					</svg>
 				)}
 
@@ -110,30 +113,14 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
 					>
-						<g opacity='0.5' clip-path='url(#clip0_2_37)'>
-							<rect
-								x='0.5'
-								y='0.5'
-								width='17'
-								height='17'
-								rx='3.5'
-								stroke='#00FF57'
-								className={cn(styles.outline)}
-							/>
-							<rect
-								x='1.5'
-								y='1.5'
-								width='15'
-								height='15'
-								rx='2.5'
-								stroke='#737674'
-							/>
-						</g>
-						<defs>
-							<clipPath id='clip0_2_37'>
-								<rect width='18' height='18' fill='white' />
-							</clipPath>
-						</defs>
+						<rect
+							x='1.5'
+							y='1.5'
+							width='15'
+							height='15'
+							rx='2.5'
+							stroke='#737674'
+						/>
 					</svg>
 				)}
 
@@ -143,51 +130,23 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
 					>
-						<g opacity='0.5' clip-path='url(#clip0_2_43)'>
-							<rect
-								x='0.5'
-								y='0.5'
-								width='17'
-								height='17'
-								rx='3.5'
-								stroke='#00FF57'
-								className={cn(styles.outline)}
-							/>
-							<rect
-								x='1.5'
-								y='1.5'
-								width='15'
-								height='15'
-								rx='2.5'
-								fill='#0066FF'
-							/>
-							<rect
-								x='1.5'
-								y='1.5'
-								width='15'
-								height='15'
-								rx='2.5'
-								fill='#737674'
-							/>
-							<rect
-								x='1.5'
-								y='1.5'
-								width='15'
-								height='15'
-								rx='2.5'
-								stroke='#737674'
-							/>
-							<path
-								d='M6 8.00003L9.00001 11L8.00001 12L5 9.00003L6 8.00003Z'
-								fill='white'
-							/>
-							<path d='M13 7L9.00001 11L7.99999 10L12 6L13 7Z' fill='white' />
-						</g>
-						<defs>
-							<clipPath id='clip0_2_43'>
-								<rect width='18' height='18' fill='white' />
-							</clipPath>
-						</defs>
+						<rect
+							x='1.5'
+							y='1.5'
+							width='15'
+							height='15'
+							rx='2.5'
+							fill='#737674'
+							stroke='#737674'
+						/>
+						<path
+							d='M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z'
+							fill='white'
+						/>
+						<path
+							d='M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z'
+							fill='white'
+						/>
 					</svg>
 				)}
 			</span>

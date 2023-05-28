@@ -5,7 +5,6 @@ label.radio {
 
   display: inline-flex;
   align-items: center;
-  column-gap: .2em;
   cursor: pointer;
 
   input.radioButton {
@@ -27,6 +26,7 @@ label.radio {
   span.mark {
     svg {
       height: 1em;
+      margin: auto .2em auto 0;
 
       &.unChecked {
         display: initial;
