@@ -1,0 +1,38 @@
+import { ReactNode } from 'react';
+import { MultiValue, SingleValue } from 'react-select';
+
+/**
+ * Custom select`s option.
+ */
+export type SelectOption = {
+	/** Value, meta-name of select option. */
+	value?: string;
+
+	/** ReactNode that is being rendered instead
+	 * of value.
+	 */
+	label: ReactNode;
+
+	/** Color scheme of multi-value badge. */
+	multiColors?: {
+		background?: string;
+		font?: string;
+	};
+
+	/** Color scheme of multi-value badge`s
+	 *  remove button.
+	 */
+	removeMultiColors?: {
+		background?: string;
+		icon?: string;
+	};
+};
+
+export interface CustomSelectProps {
+	options?: SelectOption[];
+	onChange?: (
+		option: SingleValue<SelectOption> | MultiValue<SelectOption>
+	) => any;
+	placeholder?: string;
+	isMulti?: boolean;
+}
