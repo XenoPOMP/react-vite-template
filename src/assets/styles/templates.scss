@@ -1,7 +1,8 @@
 // Import mixins
+@import "mixins/appearance";
 @import "mixins/backdrop";
-@import "mixins/userSelect";
 @import "mixins/boxSizing";
+@import "mixins/userSelect";
 
 // Import templates
 @import "flexCenter";

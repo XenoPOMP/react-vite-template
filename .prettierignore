@@ -1,0 +1,10 @@
+# Declaration files
+*.d.ts
+
+# Media files
+*.svg
+*.png
+*.jpg
+
+# CSS files
+*.scss

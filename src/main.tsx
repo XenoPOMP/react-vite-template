@@ -1,25 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App';
-import './main.scss'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider as ReduxProvider } from 'react-redux';
+
 import { store } from '@redux/index';
-import { QueryClient, QueryClientProvider } from "react-query";
+
+import App from './App';
+import './main.scss';
 
 const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: true
-    },
-  }
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: true,
+		},
+	},
 });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <ReduxProvider store={store}>
-        <App />
-      </ReduxProvider>
-    </QueryClientProvider>
-  </React.StrictMode>,
-)
+	<React.StrictMode>
+		<QueryClientProvider client={queryClient}>
+			<ReduxProvider store={store}>
+				<App />
+			</ReduxProvider>
+		</QueryClientProvider>
+	</React.StrictMode>
+);

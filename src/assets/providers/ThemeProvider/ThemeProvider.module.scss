@@ -1,3 +1,18 @@
 .themes {
-  &.dark {}
+  &.dark {
+    --ui-border: #0066FF;
+    --ui-border-disabled: #737674;
+    --ui-icon: white;
+    // Select colors
+    --ui-select-background: white;
+    --ui-select-border: rgb(229, 231, 235);
+    --ui-multi-select-def: #E6E6E6FF;
+    --ui-multi-select-font-def: black;
+    --ui-select-selection: #5086D8;
+    // Select remove button
+    --ui-select-remove-back: red;
+    --ui-select-remove-icon: white;
+    // Select font colors
+    --ui-select-font-base: black;
+  }
 }

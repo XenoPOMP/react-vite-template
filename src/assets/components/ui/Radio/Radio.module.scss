@@ -1,0 +1,52 @@
+@import "src/assets/styles/templates";
+
+label.radio {
+  @extend %notSelectable;
+
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  input.radioButton {
+    @include appearance(none);
+
+    &:checked + span.mark {
+      svg {
+        &.unChecked {
+          display: none;
+        }
+
+        &.checked {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  span.mark {
+    svg {
+      height: 1em;
+      margin: auto .2em auto 0;
+
+      &.unChecked {
+        display: initial;
+      }
+
+      &.checked {
+        display: none;
+      }
+
+      rect.outline {
+        stroke: var(--ui-border);
+      }
+
+      rect.fill {
+        fill: var(--ui-border);
+      }
+
+      rect.icon {
+        fill: var(--ui-icon);
+      }
+    }
+  }
+}
