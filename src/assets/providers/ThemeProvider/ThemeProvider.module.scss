@@ -1,3 +1,7 @@
 .themes {
-  &.dark {}
+  &.dark {
+    --ui-border: #0066FF;
+    --ui-border-disabled: #737674;
+    --ui-icon: white;
+  }
 }

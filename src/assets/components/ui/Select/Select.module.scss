@@ -1,12 +1,46 @@
 @import "src/assets/styles/templates";
 
-select.select {
-  @include appearance(none);
-
+.selectPlaceholder {
   position: relative;
-  background: none;
-  border-radius: .25em;
-  border: 0;
-  outline: 0;
-  font-size: 1em;
+  display: block;
+
+  select.select {
+    @include appearance(none);
+
+    background: none;
+    border-radius: .25em;
+    border: 1px solid var(--ui-border-disabled);
+    outline: 0;
+    font-size: 1em;
+    padding: .2em calc(.3em * 2 + .84em) .2em .3em;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      border-color: var(--ui-border);
+    }
+
+    option {
+      border-radius: 0;
+    }
+
+    &.disableChecked {
+      option:checked {
+        display: none;
+      }
+    }
+  }
+
+  svg.icon {
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - .25em);
+    right: .3em;
+    height: .5em;
+    width: .84em;
+
+    path {
+      fill: var(--ui-border);
+    }
+  }
 }

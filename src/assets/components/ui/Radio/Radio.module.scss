@@ -35,6 +35,18 @@ label.radio {
       &.checked {
         display: none;
       }
+
+      rect.outline {
+        stroke: var(--ui-border);
+      }
+
+      rect.fill {
+        fill: var(--ui-border);
+      }
+
+      rect.icon {
+        fill: var(--ui-icon);
+      }
     }
   }
 }

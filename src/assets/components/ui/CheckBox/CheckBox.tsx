@@ -56,6 +56,7 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 							stroke='#737674'
 						/>
 						<rect
+							className={cn(styles.active)}
 							x='1.5'
 							y='1.5'
 							width='15'
@@ -73,6 +74,7 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<rect
+							className={cn(styles.fillActive)}
 							x='1.5'
 							y='1.5'
 							width='15'
@@ -89,6 +91,7 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 							stroke='#737674'
 						/>
 						<rect
+							className={cn(styles.active)}
 							x='1.5'
 							y='1.5'
 							width='15'
@@ -97,10 +100,12 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 							stroke='#0066FF'
 						/>
 						<path
+							className={cn(styles.markIcon)}
 							d='M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z'
 							fill='white'
 						/>
 						<path
+							className={cn(styles.markIcon)}
 							d='M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z'
 							fill='white'
 						/>
@@ -114,6 +119,7 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<rect
+							className={cn(styles.notActive)}
 							x='1.5'
 							y='1.5'
 							width='15'
@@ -131,6 +137,7 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<rect
+							className={cn(styles.notActive, styles.fillNotActive)}
 							x='1.5'
 							y='1.5'
 							width='15'
@@ -140,10 +147,12 @@ const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
 							stroke='#737674'
 						/>
 						<path
+							className={cn(styles.markIcon)}
 							d='M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z'
 							fill='white'
 						/>
 						<path
+							className={cn(styles.markIcon)}
 							d='M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z'
 							fill='white'
 						/>

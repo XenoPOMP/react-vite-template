@@ -27,6 +27,26 @@ label.checkBoxLabel {
       rect.outline {
         opacity: 0;
       }
+
+      rect.active {
+        stroke: var(--ui-border);
+      }
+
+      rect.fillActive {
+        fill: var(--ui-border);
+      }
+
+      rect.notActive {
+        stroke: var(--ui-border-disabled);
+      }
+
+      rect.fillNotActive {
+        fill: var(--ui-border-disabled);
+      }
+
+      path.markIcon {
+        fill: var(--ui-icon);
+      }
     }
   }
 }

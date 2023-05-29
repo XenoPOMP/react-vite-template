@@ -36,6 +36,7 @@ const Radio: FC<PropsWithChildren<RadioProps>> = ({ children, name }) => {
 						stroke='#737674'
 					/>
 					<rect
+						className={cn(styles.outline)}
 						x='1.5'
 						y='1.5'
 						width='15'
@@ -52,6 +53,7 @@ const Radio: FC<PropsWithChildren<RadioProps>> = ({ children, name }) => {
 					className={cn(styles.checked)}
 				>
 					<rect
+						className={cn(styles.fill)}
 						x='1.5'
 						y='1.5'
 						width='15'
@@ -68,6 +70,7 @@ const Radio: FC<PropsWithChildren<RadioProps>> = ({ children, name }) => {
 						stroke='#737674'
 					/>
 					<rect
+						className={cn(styles.outline)}
 						x='1.5'
 						y='1.5'
 						width='15'
@@ -75,7 +78,15 @@ const Radio: FC<PropsWithChildren<RadioProps>> = ({ children, name }) => {
 						rx='7.5'
 						stroke='#0066FF'
 					/>
-					<rect x='5' y='5' width='8' height='8' rx='4' fill='white' />
+					<rect
+						className={cn(styles.icon)}
+						x='5'
+						y='5'
+						width='8'
+						height='8'
+						rx='4'
+						fill='white'
+					/>
 				</svg>
 			</span>
 
