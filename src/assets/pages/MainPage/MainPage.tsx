@@ -4,9 +4,7 @@ import { useState } from 'react';
 import Page from '@components/Page/Page';
 
 import CheckBox from '@ui/CheckBox/CheckBox';
-import Option from '@ui/Option/Option';
 import Radio from '@ui/Radio/Radio';
-import Select from '@ui/Select/Select';
 
 import styles from './MainPage.module.scss';
 
@@ -34,11 +32,6 @@ const MainPage = () => {
 
 				<Radio name={'gender'}>Male</Radio>
 				<Radio name={'gender'}>Female</Radio>
-
-				<Select>
-					<Option>Some large option</Option>
-					<Option>Some large option 2</Option>
-				</Select>
 			</div>
 		</Page>
 	);
