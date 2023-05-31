@@ -707,6 +707,11 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@pacote/react-use-outside@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pacote/react-use-outside/-/react-use-outside-2.0.1.tgz#f9eb4c78353b6f4b489858c6ce909e097fe74267"
+  integrity sha512-Io5cI+4AnDwCZEh8nVr2Rd/OKAiFloJB1px/9/Vga5P+ziRUAo+cKg37BeofPMC9yQRZZBjtU7zPvbyZNplgTw==
+
 "@reduxjs/toolkit@^1.9.1":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.9.1.tgz#4c34dc4ddcec161535288c60da5c19c3ef15180e"

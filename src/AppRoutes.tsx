@@ -1,10 +1,9 @@
 import { AnimatePresence } from 'framer-motion';
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 import MainPage from '@pages/MainPage/MainPage';
 import NotFound from '@pages/NotFound/NotFound';
-import TestingPage from '@pages/TestingPage/TestingPage';
 
 /**
  * Root component of application routes.
@@ -31,8 +30,6 @@ const AppRoutes: FC<{
 				<Route path={'*'} element={<NotFound />} />
 
 				<Route path={'/'} element={<MainPage />} />
-
-				<Route path={'/test'} element={<TestingPage />} />
 			</Routes>
 		);
 	};
