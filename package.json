@@ -42,7 +42,6 @@
     "tailwindcss-typescript": "^1.1.2",
     "that-sparks": "^0.1.8",
     "ts-custom-error": "^3.3.1",
-    "ts-transformer-keys": "^0.4.4",
     "universal-cookie": "^4.0.4",
     "use-sound": "^4.0.1",
     "uuid": "^9.0.0"
