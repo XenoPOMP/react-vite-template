@@ -1,7 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-
-import MainPage from '@pages/MainPage/MainPage';
-import NotFound from '@pages/NotFound/NotFound';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import AppRoutes from './AppRoutes';
 
