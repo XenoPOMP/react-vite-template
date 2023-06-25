@@ -1,6 +1,8 @@
 import { FC, PropsWithChildren, useEffect } from 'react';
 import Media from 'react-media';
 
+import { PropsWith } from '@type/PropsWith';
+
 import ArgumentError from '@errors/ArgumentError';
 
 import { MediaWidthViewProps } from './MediaWidthView.props';
@@ -15,7 +17,7 @@ import { MediaWidthViewProps } from './MediaWidthView.props';
  * @param {number} [minWidth]    minimum width in pixels.
  * @constructor
  */
-const MediaWidthView: FC<PropsWithChildren<MediaWidthViewProps>> = ({
+const MediaWidthView: FC<PropsWith<'children', MediaWidthViewProps>> = ({
 	children,
 	maxWidth,
 	minWidth,

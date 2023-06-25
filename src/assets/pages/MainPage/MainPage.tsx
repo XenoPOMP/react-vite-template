@@ -8,8 +8,8 @@ const MainPage = () => {
 	return (
 		<Page
 			meta={{
-				pageTitle: 'Main',
-				pageDescription: 'Some description',
+				title: 'Main',
+				description: 'Some description',
 				keywords: '',
 			}}
 		></Page>

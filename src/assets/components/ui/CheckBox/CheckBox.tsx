@@ -1,6 +1,8 @@
 import cn from 'classnames';
 import { FC, PropsWithChildren, useRef } from 'react';
 
+import { PropsWith } from '@type/PropsWith';
+
 import styles from './CheckBox.module.scss';
 import type { CheckBoxProps } from './CheckBox.props';
 
@@ -21,7 +23,7 @@ import type { CheckBoxProps } from './CheckBox.props';
  * @param onClick				click callback.
  * @constructor
  */
-const CheckBox: FC<PropsWithChildren<CheckBoxProps>> = ({
+const CheckBox: FC<PropsWith<'children', CheckBoxProps>> = ({
 	children,
 	checked,
 	disabled,

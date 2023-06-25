@@ -3,16 +3,14 @@ import { CSSProperties, FC, ReactElement, useEffect, useState } from 'react';
 
 import Loader from '@ui/Loader/Loader';
 
+import { PropsWith } from '@type/PropsWith';
+
 import styles from './ProgressiveImage.module.scss';
 import { ProgressiveImageProps } from './ProgressiveImage.props';
 
-const ProgressiveImage: FC<ProgressiveImageProps> = ({
-	src,
-	alt,
-	className,
-	style,
-	loaderColorScheme,
-}) => {
+const ProgressiveImage: FC<
+	PropsWith<'className' | 'style', ProgressiveImageProps>
+> = ({ src, alt, className, style, loaderColorScheme }) => {
 	const getInlineVariables = (): CSSProperties => {
 		const { backgroundColor } = loaderColorScheme;
 

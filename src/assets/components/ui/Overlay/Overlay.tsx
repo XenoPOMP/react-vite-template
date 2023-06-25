@@ -1,6 +1,8 @@
 import cn from 'classnames';
 import { CSSProperties, FC, PropsWithChildren } from 'react';
 
+import { PropsWith } from '@type/PropsWith';
+
 import styles from './Overlay.module.scss';
 import type { OverlayProps } from './Overlay.props';
 
@@ -19,7 +21,7 @@ interface OverlayStyles extends CSSProperties {
  * @param children
  * @constructor
  */
-const Overlay: FC<PropsWithChildren<OverlayProps>> = ({
+const Overlay: FC<PropsWith<'children' | 'className', OverlayProps>> = ({
 	className,
 	backdrop,
 	trigger,

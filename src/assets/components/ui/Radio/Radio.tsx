@@ -1,6 +1,8 @@
 import cn from 'classnames';
 import { FC, PropsWithChildren } from 'react';
 
+import { PropsWith } from '@type/PropsWith';
+
 import styles from './Radio.module.scss';
 import type { RadioProps } from './Radio.props';
 
@@ -15,7 +17,7 @@ import type { RadioProps } from './Radio.props';
  * @param name
  * @constructor
  */
-const Radio: FC<PropsWithChildren<RadioProps>> = ({ children, name }) => {
+const Radio: FC<PropsWith<'children', RadioProps>> = ({ children, name }) => {
 	return (
 		<label className={cn(styles.radio)}>
 			<input type={'radio'} name={name} className={cn(styles.radioButton)} />

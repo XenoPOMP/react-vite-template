@@ -1,6 +1,8 @@
-import { FC, PropsWithChildren } from 'react';
+import { FC } from 'react';
 
 import GlobalProvider from '@providers/GlobalProvider/GlobalProvider';
+
+import { PropsWith } from '@type/PropsWith';
 
 import { LayoutProps } from './Layout.props';
 
@@ -10,7 +12,7 @@ import { LayoutProps } from './Layout.props';
  * @param children
  * @constructor
  */
-const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children }) => {
+const Layout: FC<PropsWith<'children', LayoutProps>> = ({ children }) => {
 	return (
 		<GlobalProvider>
 			<main>{children}</main>

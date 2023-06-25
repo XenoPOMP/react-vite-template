@@ -5,8 +5,10 @@ import Layout from '@components/Layout/Layout';
 
 import useAppSettings from '@hooks/useAppSettings';
 
+import { MetaInfo } from '@type/MetaInfo';
+import { PropsWith } from '@type/PropsWith';
+
 import { PageProps } from './Page.props';
-import type { MetaInfo } from './Page.props';
 
 /**
  * Component that provides page implementation.
@@ -16,7 +18,7 @@ import type { MetaInfo } from './Page.props';
  * @param {ReactNode} children       page children component.
  * @constructor
  */
-const Page: FC<PropsWithChildren<PageProps>> = ({ meta, children }) => {
+const Page: FC<PropsWith<'children', PageProps>> = ({ meta, children }) => {
 	const { appName } = useAppSettings();
 
 	return (
@@ -26,10 +28,12 @@ const Page: FC<PropsWithChildren<PageProps>> = ({ meta, children }) => {
 					lang: 'en',
 				}}
 			>
-				<title>{meta.pageTitle}</title>
-				<meta name={'description'} content={meta.pageDescription} />
+				<title>{meta.title}</title>
+				<meta name={'description'} content={meta.description} />
 				<meta name={'keywords'} content={meta.keywords} />
 				<meta name={'apple-mobile-web-app-title'} content={appName.get()} />
+
+				{meta.noIndex && <meta name={'robots'} content={'noindex'} />}
 			</Helmet>
 
 			{children}
