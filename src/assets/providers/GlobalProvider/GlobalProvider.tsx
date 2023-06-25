@@ -1,16 +1,20 @@
 import { FC } from 'react';
 
 import BodyClassnameProvider from '@providers/BodyClassnameProvider/BodyClassnameProvider';
-import { ProviderProps } from '@providers/Provider.props';
 import SizesProvider from '@providers/SizesProvider/SizesProvider';
 import ThemeProvider from '@providers/ThemeProvider/ThemeProvider';
+import SaversProvider from '@providers/savers/SaversProvider/SaversProvider';
 
-const GlobalProvider: FC<ProviderProps> = ({ children }) => {
+import { PropsWith } from '@type/PropsWith';
+
+const GlobalProvider: FC<PropsWith<'children', {}>> = ({ children }) => {
 	return (
 		<>
 			<BodyClassnameProvider>
 				<SizesProvider>
-					<ThemeProvider>{children}</ThemeProvider>
+					<ThemeProvider>
+						<SaversProvider>{children}</SaversProvider>
+					</ThemeProvider>
 				</SizesProvider>
 			</BodyClassnameProvider>
 		</>

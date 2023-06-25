@@ -1,4 +1,1 @@
-export interface UiContainerProps {
-	id?: string;
-	className?: string;
-}
+export interface UiContainerProps {}

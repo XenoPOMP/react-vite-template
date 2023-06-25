@@ -707,6 +707,11 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@pacote/react-use-outside@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pacote/react-use-outside/-/react-use-outside-2.0.1.tgz#f9eb4c78353b6f4b489858c6ce909e097fe74267"
+  integrity sha512-Io5cI+4AnDwCZEh8nVr2Rd/OKAiFloJB1px/9/Vga5P+ziRUAo+cKg37BeofPMC9yQRZZBjtU7zPvbyZNplgTw==
+
 "@reduxjs/toolkit@^1.9.1":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.9.1.tgz#4c34dc4ddcec161535288c60da5c19c3ef15180e"
@@ -3719,6 +3724,11 @@ react-side-effect@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
+
+react-swipeable@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-7.0.1.tgz#cd299f5986c5e4a7ee979839658c228f660e1e0c"
+  integrity sha512-RKB17JdQzvECfnVj9yDZsiYn3vH0eyva/ZbrCZXZR0qp66PBRhtg4F9yJcJTWYT5Adadi+x4NoG53BxKHwIYLQ==
 
 react-transition-group@^4.3.0:
   version "4.4.5"

@@ -4,7 +4,7 @@ import Page from '@components/Page/Page';
 
 const NotFound = () => {
 	return (
-		<Page meta={{ pageTitle: '404', pageDescription: '', keywords: '' }}>
+		<Page meta={{ title: '404', description: '', keywords: '' }}>
 			Error 404: page not found
 		</Page>
 	);

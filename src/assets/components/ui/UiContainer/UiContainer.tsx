@@ -1,10 +1,13 @@
 import cn from 'classnames';
-import { FC, PropsWithChildren } from 'react';
+import { FC } from 'react';
+
+import { PropsWith } from '@type/PropsWith';
 
 import styles from './UiContainer.module.scss';
 import type { UiContainerProps } from './UiContainer.props';
 
-interface IUiContainerNestedProps extends PropsWithChildren<UiContainerProps> {}
+interface IUiContainerNestedProps
+	extends PropsWith<'children' | 'id' | 'className', UiContainerProps> {}
 
 const UiContainer: FC<IUiContainerNestedProps> & {
 	Section: FC<IUiContainerNestedProps>;

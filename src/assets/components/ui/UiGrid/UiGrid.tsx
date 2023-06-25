@@ -1,15 +1,19 @@
 import cn from 'classnames';
-import { motion } from 'framer-motion';
-import { FC, PropsWithChildren, ReactNode } from 'react';
+import { FC } from 'react';
+
+import { PropsWith } from '@type/PropsWith';
 
 import getUiSx from '@utils/getUiSx';
 
 import styles from './UiGrid.module.scss';
 import type { UiGridProps } from './UiGrid.props';
 
-const UiGrid: FC<PropsWithChildren<UiGridProps>> & {
-	Section: FC<PropsWithChildren<UiGridProps>>;
-	Article: FC<PropsWithChildren<UiGridProps>>;
+interface IUiGridNestedProps
+	extends PropsWith<'children' | 'id' | 'className', UiGridProps> {}
+
+const UiGrid: FC<IUiGridNestedProps> & {
+	Section: FC<IUiGridNestedProps>;
+	Article: FC<IUiGridNestedProps>;
 } = ({ children, className, id, cols, rows, gap, maxWidth }) => {
 	return (
 		<div

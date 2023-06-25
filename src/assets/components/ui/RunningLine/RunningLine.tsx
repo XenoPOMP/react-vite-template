@@ -1,11 +1,16 @@
 import cn from 'classnames';
-import { FC, PropsWithChildren } from 'react';
+import { FC } from 'react';
+import { ArgumentsType } from 'vitest';
+
+import { PropsWith } from '@type/PropsWith';
 
 import styles from './RunningLine.module.scss';
 import { RunningLineProps } from './RunningLine.props';
 
-const RunningLine: FC<PropsWithChildren<RunningLineProps>> = props => {
-	const defaultProps: PropsWithChildren<RunningLineProps> = {
+const RunningLine: FC<
+	PropsWith<'children' | 'style' | 'className', RunningLineProps>
+> = props => {
+	const defaultProps: ArgumentsType<typeof RunningLine>[0] = {
 		behavior: 'scroll',
 		direction: 'left',
 		loop: false,
