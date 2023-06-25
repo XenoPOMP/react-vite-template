@@ -1,7 +1,7 @@
 {
   "name": "react-vite-template",
   "private": true,
-  "version": "1.6.6",
+  "version": "1.6.7",
   "type": "module",
   "homepage": "./",
   "scripts": {
