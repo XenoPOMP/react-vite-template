@@ -36,7 +36,7 @@ const AppRoutes: FC<{
 
 	return pageTransitions ? (
 		<AnimatePresence>
-			<RoutesNode />
+			<RoutesNode key={location.pathname} />
 		</AnimatePresence>
 	) : (
 		<RoutesNode />
