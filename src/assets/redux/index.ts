@@ -9,7 +9,9 @@ const rootReducer = combineReducers({
 });
 
 /** Cookie name. */
-const cookieName = `${initialAppSettings.appName}-store`;
+const cookieName = `${initialAppSettings.appName
+	.toLowerCase()
+	.replace(/\s/gi, '-')}-persisted-store`;
 
 const store = configureStore({
 	reducer: rootReducer,
