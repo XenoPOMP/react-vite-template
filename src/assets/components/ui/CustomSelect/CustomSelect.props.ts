@@ -28,11 +28,20 @@ export type SelectOption = {
 	};
 };
 
+/**
+ * Allows adding select option with custom value`s
+ * type.
+ */
+export type TypedSelectOption<Value extends SelectOption['value']> = {
+	value: Value;
+} & Omit<SelectOption, 'value'>;
+
 export interface CustomSelectProps {
 	options?: SelectOption[];
 	onChange?: (
 		option: SingleValue<SelectOption> | MultiValue<SelectOption>
 	) => any;
+	defaultValue?: SelectOption;
 	placeholder?: string;
 	isMulti?: boolean;
 }

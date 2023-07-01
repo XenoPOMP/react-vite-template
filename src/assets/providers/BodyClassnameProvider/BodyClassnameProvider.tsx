@@ -9,31 +9,39 @@ import {
 
 import { IBodyClassname } from '@providers/BodyClassnameProvider/body-classname.interface';
 
-import { PropsWith } from '@type/PropsWith';
-
-import styles from './BodyClassnameProvider.module.scss';
 import type { BodyClassnameProviderProps } from './BodyClassnameProvider.props';
 
 export const BodyClassnameContext = createContext<IBodyClassname>({
-	classes: [],
-	addClassName: () => {},
+	classes: {},
+	registerClasses: (name, classNames) => {},
+	deleteClasses: name => {},
 });
 
 const BodyClassnameProvider: FC<
-	PropsWith<'children', BodyClassnameProviderProps>
+	PropsWithChildren<BodyClassnameProviderProps>
 > = ({ children }) => {
-	const [classList, setClassList] = useState<string[]>([]);
+	const [classList, setClassList] = useState<IBodyClassname['classes']>({});
 
 	useEffect(() => {
-		document.body.className = cn(...classList);
+		let outputString = '';
+
+		Object.keys(classList).forEach(key => {
+			outputString = `${outputString} ${cn(...classList[key])}`;
+		});
+
+		document.body.className = cn(outputString);
 	}, [classList]);
 
 	return (
 		<BodyClassnameContext.Provider
 			value={{
 				classes: classList,
-				addClassName: className =>
-					setClassList(prev => Array.from(new Set([...prev, ...className]))),
+				registerClasses: (name, classNames) => {
+					setClassList({ ...classList, [name]: classNames });
+				},
+				deleteClasses: name => {
+					setClassList({ ...classList, [name]: [] });
+				},
 			}}
 		>
 			{children}

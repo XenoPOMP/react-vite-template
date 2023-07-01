@@ -1,9 +1,9 @@
 import cn from 'classnames';
-import { CSSProperties, FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import Select, { GroupBase, StylesConfig } from 'react-select';
-import AsyncSelect from 'react-select/async';
 
-import styles from './CustomSelect.module.scss';
+import { PropsWith } from '@type/PropsWith';
+
 import type { CustomSelectProps, SelectOption } from './CustomSelect.props';
 
 /**
@@ -42,17 +42,27 @@ import type { CustomSelectProps, SelectOption } from './CustomSelect.props';
  * />
  *
  * @param {SelectOption} options          																												 option list of {@link SelectOption}s.
+ *
  * @param {(option: SingleValue<SelectOption> | MultiValue<SelectOption>) => any} onChange				 onChange event callback. Takes event changes
  * 												 																																			   as argument.
+ *
  * @param {string} placeholder			 																															 select`s placeholder.
+ *
  * @param {boolean} isMulti				   																											         defines whether select is multiply or not.
+ *
+ * @param {string} className																																			 custom class definition.
+ *
+ * @param {SelectOption} [defaultValue]																														 option that will be selected by default.
+ *
  * @constructor
  */
-const CustomSelect: FC<CustomSelectProps> = ({
+const CustomSelect: FC<PropsWith<'className', CustomSelectProps>> = ({
 	options,
 	onChange,
 	placeholder,
 	isMulti,
+	className,
+	defaultValue,
 }) => {
 	const colorStyles: StylesConfig<
 		SelectOption,
@@ -81,6 +91,10 @@ const CustomSelect: FC<CustomSelectProps> = ({
 			};
 		},
 
+		input: styles => {
+			return { ...styles, color: 'var(--ui-select-font-base)' };
+		},
+
 		placeholder: (styles, props) => {
 			return { ...styles, color: 'var(--ui-select-font-base)' };
 		},
@@ -91,8 +105,14 @@ const CustomSelect: FC<CustomSelectProps> = ({
 				...styles,
 				color: 'var(--ui-select-font-base)',
 				backgroundColor:
-					isSelected || isFocused ? 'var(--ui-select-selection)' : '',
+					isSelected || isFocused
+						? 'var(--ui-select-selection)'
+						: 'var(--ui-select-background)',
 			};
+		},
+
+		group: styles => {
+			return { ...styles, background: 'red' };
 		},
 
 		// Styling multi-value
@@ -145,9 +165,19 @@ const CustomSelect: FC<CustomSelectProps> = ({
 					onChange(option);
 				}
 			}}
+			defaultValue={defaultValue}
 			isMulti={isMulti}
 			placeholder={placeholder}
 			styles={colorStyles}
+			className={cn(className)}
+			theme={theme => ({
+				...theme,
+				colors: {
+					...theme.colors,
+					neutral80: 'var(--ui-select-font-base)',
+					neutral0: 'var(--ui-select-background)',
+				},
+			})}
 		></Select>
 	);
 };
