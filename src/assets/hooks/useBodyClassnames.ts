@@ -1,14 +1,35 @@
 import { useContext, useEffect } from 'react';
 
 import { BodyClassnameContext } from '@providers/BodyClassnameProvider/BodyClassnameProvider';
-import styles from '@providers/SizesProvider/SizesProvider.module.scss';
+import { IBodyClassname } from '@providers/BodyClassnameProvider/body-classname.interface';
 
-const useBodyClassnames = (classNames: string[]) => {
+/**
+ * Register classes to body.
+ *
+ * @example
+ * const [registerClasses, deleteClasses] = useBodyClassnames();
+ *
+ * useEffect(() => {
+ * 		// Clear classnames
+ * 		deleteClasses(classGroupName);
+ *
+ * 		registerClasses(classGroupName, [
+ * 			styles.themes,
+ * 			currentTheme === 'light' ? styles.light : '',
+ * 			currentTheme === 'dark' ? styles.dark : '',
+ * 		]);
+ * 	}, [currentTheme]);
+ */
+const useBodyClassnames = (): [
+	registerClasses: IBodyClassname['registerClasses'],
+	deleteClasses: IBodyClassname['deleteClasses']
+] => {
 	const classContext = useContext(BodyClassnameContext);
 
-	return useEffect(() => {
-		classContext.addClassName(classNames);
-	}, []);
+	return [
+		(name, classNames) => classContext.registerClasses(name, classNames),
+		name => classContext.deleteClasses(name),
+	];
 };
 
 export default useBodyClassnames;
