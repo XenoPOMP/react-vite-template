@@ -37,3 +37,4 @@
 1. [Getting started](./.rvt/docs/GETTING-STARTED.md)
 2. [Available scripts](./.rvt/docs/AVAILABLE-SCRIPTS.md)
 3. [CLI](./.rvt/docs/CLI.md)
+4. [Chrome Extension](./.rvt/docs/CHROME-EXT.md)
