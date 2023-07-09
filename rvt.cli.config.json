@@ -1,0 +1,6 @@
+{
+  "componentGeneration": {
+    "createScssModule": true,
+    "createPropInterface": true
+  }
+}
