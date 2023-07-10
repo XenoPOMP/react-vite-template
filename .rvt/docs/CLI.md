@@ -7,6 +7,16 @@ For full help, execute this command:
 rvt --help
 ```
 
+## Configuration
+```tsx
+interface Configuration {
+  componentGeneration?: {
+    createScssModule?: boolean;
+    createPropInterface?: boolean;
+  };
+}
+```
+
 ## New
 
 This command allows you to generate new entities inside project.
