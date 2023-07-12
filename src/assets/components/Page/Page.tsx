@@ -18,7 +18,11 @@ import { PageProps } from './Page.props';
  * @param {ReactNode} children       page children component.
  * @constructor
  */
-const Page: FC<PropsWith<'children', PageProps>> = ({ meta, children }) => {
+const Page: FC<PropsWith<'children', PageProps>> = ({
+  meta,
+  children,
+  noIndex,
+}) => {
   const { appName } = useAppSettings();
 
   return (
@@ -33,7 +37,7 @@ const Page: FC<PropsWith<'children', PageProps>> = ({ meta, children }) => {
         <meta name={'keywords'} content={meta.keywords} />
         <meta name={'apple-mobile-web-app-title'} content={appName.get()} />
 
-        {meta.noIndex && <meta name={'robots'} content={'noindex'} />}
+        {noIndex && <meta name={'robots'} content={'noindex'} />}
       </Helmet>
 
       {children}
