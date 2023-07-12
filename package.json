@@ -9,11 +9,13 @@
     "dev:host": "yarn dev --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "clear": "yarn clear:snaps",
+    "clear:snaps": "rmdir /s /q \"src/__tests__/__snapshots__\"",
+    "test": "yarn clear && vitest",
     "test:frontend": "cross-env VITE_TESTING_MODE=FRONTEND yarn test",
     "test:backend": "cross-env VITE_TESTING_MODE=BACKEND yarn test",
     "test:fullstack": "cross-env VITE_TESTING_MODE=FULLSTACK yarn test",
-    "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK vitest run --coverage"
+    "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK yarn clear && vitest run --coverage"
   },
   "dependencies": {
     "@pacote/react-use-outside": "^2.0.1",
@@ -59,6 +61,7 @@
     "@types/uuid": "^9.0.2",
     "@vitejs/plugin-react": "^4.0.3",
     "@vitest/coverage-c8": "^0.33.0",
+    "@vitest/coverage-v8": "^0.33.0",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "jsdom": "^22.1.0",
