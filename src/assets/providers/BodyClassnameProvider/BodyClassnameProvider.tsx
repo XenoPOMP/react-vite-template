@@ -1,10 +1,10 @@
 import cn from 'classnames';
 import {
-	FC,
-	PropsWithChildren,
-	createContext,
-	useEffect,
-	useState,
+  FC,
+  PropsWithChildren,
+  createContext,
+  useEffect,
+  useState,
 } from 'react';
 
 import { IBodyClassname } from '@providers/BodyClassnameProvider/body-classname.interface';
@@ -12,41 +12,41 @@ import { IBodyClassname } from '@providers/BodyClassnameProvider/body-classname.
 import type { BodyClassnameProviderProps } from './BodyClassnameProvider.props';
 
 export const BodyClassnameContext = createContext<IBodyClassname>({
-	classes: {},
-	registerClasses: (name, classNames) => {},
-	deleteClasses: name => {},
+  classes: {},
+  registerClasses: (name, classNames) => {},
+  deleteClasses: name => {},
 });
 
 const BodyClassnameProvider: FC<
-	PropsWithChildren<BodyClassnameProviderProps>
+  PropsWithChildren<BodyClassnameProviderProps>
 > = ({ children }) => {
-	const [classList, setClassList] = useState<IBodyClassname['classes']>({});
+  const [classList, setClassList] = useState<IBodyClassname['classes']>({});
 
-	useEffect(() => {
-		let outputString = '';
+  useEffect(() => {
+    let outputString = '';
 
-		Object.keys(classList).forEach(key => {
-			outputString = `${outputString} ${cn(...classList[key])}`;
-		});
+    Object.keys(classList).forEach(key => {
+      outputString = `${outputString} ${cn(...classList[key])}`;
+    });
 
-		document.body.className = cn(outputString);
-	}, [classList]);
+    document.body.className = cn(outputString);
+  }, [classList]);
 
-	return (
-		<BodyClassnameContext.Provider
-			value={{
-				classes: classList,
-				registerClasses: (name, classNames) => {
-					setClassList({ ...classList, [name]: classNames });
-				},
-				deleteClasses: name => {
-					setClassList({ ...classList, [name]: [] });
-				},
-			}}
-		>
-			{children}
-		</BodyClassnameContext.Provider>
-	);
+  return (
+    <BodyClassnameContext.Provider
+      value={{
+        classes: classList,
+        registerClasses: (name, classNames) => {
+          setClassList({ ...classList, [name]: classNames });
+        },
+        deleteClasses: name => {
+          setClassList({ ...classList, [name]: [] });
+        },
+      }}
+    >
+      {children}
+    </BodyClassnameContext.Provider>
+  );
 };
 
 export default BodyClassnameProvider;

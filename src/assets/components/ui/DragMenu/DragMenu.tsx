@@ -14,27 +14,27 @@ import type { DragMenuProps } from './DragMenu.props';
  * @constructor
  */
 const DragMenu: FC<PropsWithChildren<DragMenuProps>> = ({
-	children,
-	classNames,
-	axis,
+  children,
+  classNames,
+  axis,
 }) => {
-	const constraintRef = useRef(null);
+  const constraintRef = useRef(null);
 
-	return (
-		<motion.div
-			ref={constraintRef}
-			className={cn(classNames?.constraint, styles.dragElement)}
-		>
-			<motion.div
-				drag={axis}
-				dragConstraints={constraintRef}
-				dragElastic={0.2}
-				className={classNames?.draggable}
-			>
-				{children}
-			</motion.div>
-		</motion.div>
-	);
+  return (
+    <motion.div
+      ref={constraintRef}
+      className={cn(classNames?.constraint, styles.dragElement)}
+    >
+      <motion.div
+        drag={axis}
+        dragConstraints={constraintRef}
+        dragElastic={0.2}
+        className={classNames?.draggable}
+      >
+        {children}
+      </motion.div>
+    </motion.div>
+  );
 };
 
 export default DragMenu;

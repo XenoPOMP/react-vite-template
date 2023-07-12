@@ -4,7 +4,7 @@ import { AppSettings } from '@redux/reducers/appSettingsSlice';
  * Redux store interface.
  */
 interface IStore {
-	appSettings: AppSettings;
+  appSettings: AppSettings;
 }
 
 /**
@@ -13,8 +13,8 @@ interface IStore {
  * A generic is payload type.
  */
 export type ReduxAction<A> = {
-	payload: A;
-	type: string;
+  payload: A;
+  type: string;
 };
 
 export default IStore;

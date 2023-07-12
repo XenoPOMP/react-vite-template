@@ -19,26 +19,26 @@ import { PageProps } from './Page.props';
  * @constructor
  */
 const Page: FC<PropsWith<'children', PageProps>> = ({ meta, children }) => {
-	const { appName } = useAppSettings();
+  const { appName } = useAppSettings();
 
-	return (
-		<Layout>
-			<Helmet
-				htmlAttributes={{
-					lang: 'en',
-				}}
-			>
-				<title>{meta.title}</title>
-				<meta name={'description'} content={meta.description} />
-				<meta name={'keywords'} content={meta.keywords} />
-				<meta name={'apple-mobile-web-app-title'} content={appName.get()} />
+  return (
+    <Layout>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
+        <title>{meta.title}</title>
+        <meta name={'description'} content={meta.description} />
+        <meta name={'keywords'} content={meta.keywords} />
+        <meta name={'apple-mobile-web-app-title'} content={appName.get()} />
 
-				{meta.noIndex && <meta name={'robots'} content={'noindex'} />}
-			</Helmet>
+        {meta.noIndex && <meta name={'robots'} content={'noindex'} />}
+      </Helmet>
 
-			{children}
-		</Layout>
-	);
+      {children}
+    </Layout>
+  );
 };
 
 export default Page;

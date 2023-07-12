@@ -16,13 +16,13 @@ import type { BlockProps } from './Block.props';
  * @constructor
  */
 const Block: FC<
-	PropsWith<'className' | 'style' | 'id' | 'children', BlockProps>
+  PropsWith<'className' | 'style' | 'id' | 'children', BlockProps>
 > = ({ className, style, id, children }) => {
-	return (
-		<div className={cn(styles.block, className)} id={id} style={style}>
-			{children}
-		</div>
-	);
+  return (
+    <div className={cn(styles.block, className)} id={id} style={style}>
+      {children}
+    </div>
+  );
 };
 
 export default Block;

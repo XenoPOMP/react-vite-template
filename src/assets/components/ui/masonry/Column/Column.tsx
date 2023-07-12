@@ -16,13 +16,13 @@ import type { ColumnProps } from './Column.props';
  * @constructor
  */
 const Column: FC<
-	PropsWith<'className' | 'style' | 'id' | 'children', ColumnProps>
+  PropsWith<'className' | 'style' | 'id' | 'children', ColumnProps>
 > = ({ children, className, style, id }) => {
-	return (
-		<div className={cn(styles.column, className)} id={id} style={style}>
-			{children}
-		</div>
-	);
+  return (
+    <div className={cn(styles.column, className)} id={id} style={style}>
+      {children}
+    </div>
+  );
 };
 
 export default Column;

@@ -1,23 +1,23 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import appSettingsSlice, {
-	initialAppSettings,
+  initialAppSettings,
 } from '@redux/reducers/appSettingsSlice';
 
 const rootReducer = combineReducers({
-	appSettings: appSettingsSlice,
+  appSettings: appSettingsSlice,
 });
 
 /** Cookie name. */
 const cookieName = `${initialAppSettings.appName
-	.toLowerCase()
-	.replace(/\s/gi, '-')}-persisted-store`;
+  .toLowerCase()
+  .replace(/\s/gi, '-')}-persisted-store`;
 
 const store = configureStore({
-	reducer: rootReducer,
-	preloadedState: localStorage.getItem(cookieName)
-		? JSON.parse(localStorage.getItem(cookieName) as string)
-		: {},
+  reducer: rootReducer,
+  preloadedState: localStorage.getItem(cookieName)
+    ? JSON.parse(localStorage.getItem(cookieName) as string)
+    : {},
 });
 
 /**
@@ -26,7 +26,7 @@ const store = configureStore({
  * Save data to local storage.
  */
 store.subscribe(() => {
-	localStorage.setItem(cookieName, JSON.stringify(store.getState()));
+  localStorage.setItem(cookieName, JSON.stringify(store.getState()));
 });
 
 export { store };

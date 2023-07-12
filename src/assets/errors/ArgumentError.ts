@@ -7,9 +7,9 @@ import { CustomError } from 'ts-custom-error';
  * @extends {@link CustomError}
  */
 class ArgumentError extends CustomError {
-	public constructor(msg?: string) {
-		super(msg);
-	}
+  public constructor(msg?: string) {
+    super(msg);
+  }
 }
 
 export default ArgumentError;

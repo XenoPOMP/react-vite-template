@@ -18,13 +18,13 @@ import type { LazyComponentProps } from './LazyComponent.props';
  * @constructor
  */
 const LazyComponent: FC<LazyComponentProps> = ({ element, fallback }) => {
-	const LazyElement = lazy(element);
+  const LazyElement = lazy(element);
 
-	return (
-		<Suspense fallback={fallback}>
-			<LazyElement />
-		</Suspense>
-	);
+  return (
+    <Suspense fallback={fallback}>
+      <LazyElement />
+    </Suspense>
+  );
 };
 
 export default LazyComponent;

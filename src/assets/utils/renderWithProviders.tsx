@@ -9,9 +9,9 @@ import { store } from '@redux/index';
  * Render options for Vitest DOM wrapping
  */
 export interface RenderOptions {
-	useRedux?: boolean;
-	useRouter?: boolean;
-	useQuery?: boolean;
+  useRedux?: boolean;
+  useRouter?: boolean;
+  useQuery?: boolean;
 }
 
 /**
@@ -25,7 +25,7 @@ type Wrapper = (ui: JSX.Element) => JSX.Element;
  * @returns {JSX.Element}      wrapped UI
  */
 const wrapInRedux: Wrapper = ui => {
-	return <ReduxProvider store={store}>{ui}</ReduxProvider>;
+  return <ReduxProvider store={store}>{ui}</ReduxProvider>;
 };
 
 /**
@@ -34,13 +34,13 @@ const wrapInRedux: Wrapper = ui => {
  * @returns {JSX.Element}      wrapped UI
  */
 const wrapInRouter: Wrapper = ui => {
-	return (
-		<Router>
-			<Routes>
-				<Route path={'/'} element={ui} />
-			</Routes>
-		</Router>
-	);
+  return (
+    <Router>
+      <Routes>
+        <Route path={'/'} element={ui} />
+      </Routes>
+    </Router>
+  );
 };
 
 /**
@@ -49,16 +49,16 @@ const wrapInRouter: Wrapper = ui => {
  * @returns {JSX.Element}      wrapped UI
  */
 const wrapInReactQuery: Wrapper = ui => {
-	const queryClient = new QueryClient({
-		defaultOptions: {
-			queries: {
-				refetchOnWindowFocus: true,
-				// refetchInterval: 5000
-			},
-		},
-	});
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: true,
+        // refetchInterval: 5000
+      },
+    },
+  });
 
-	return <QueryClientProvider client={queryClient}>{ui}</QueryClientProvider>;
+  return <QueryClientProvider client={queryClient}>{ui}</QueryClientProvider>;
 };
 
 /**
@@ -68,27 +68,27 @@ const wrapInReactQuery: Wrapper = ui => {
  * @returns {RenderResult}
  */
 const renderWithProviders = (ui: JSX.Element, options?: RenderOptions) => {
-	const renderOptions: RenderOptions = {
-		useRedux: false,
-		useRouter: false,
-		useQuery: false,
-		...options,
-	};
-	let renderUi: JSX.Element = ui;
+  const renderOptions: RenderOptions = {
+    useRedux: false,
+    useRouter: false,
+    useQuery: false,
+    ...options,
+  };
+  let renderUi: JSX.Element = ui;
 
-	if (renderOptions.useRedux) {
-		renderUi = wrapInRedux(renderUi);
-	}
+  if (renderOptions.useRedux) {
+    renderUi = wrapInRedux(renderUi);
+  }
 
-	if (renderOptions.useRouter) {
-		renderUi = wrapInRouter(renderUi);
-	}
+  if (renderOptions.useRouter) {
+    renderUi = wrapInRouter(renderUi);
+  }
 
-	if (renderOptions.useQuery) {
-		renderUi = wrapInReactQuery(renderUi);
-	}
+  if (renderOptions.useQuery) {
+    renderUi = wrapInReactQuery(renderUi);
+  }
 
-	return render(renderUi);
+  return render(renderUi);
 };
 
 export default renderWithProviders;

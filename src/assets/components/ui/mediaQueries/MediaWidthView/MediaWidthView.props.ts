@@ -1,4 +1,4 @@
 export interface MediaWidthViewProps {
-	maxWidth?: number;
-	minWidth?: number;
+  maxWidth?: number;
+  minWidth?: number;
 }

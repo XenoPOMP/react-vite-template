@@ -21,15 +21,15 @@ import { IBodyClassname } from '@providers/BodyClassnameProvider/body-classname.
  * 	}, [currentTheme]);
  */
 const useBodyClassnames = (): [
-	registerClasses: IBodyClassname['registerClasses'],
-	deleteClasses: IBodyClassname['deleteClasses']
+  registerClasses: IBodyClassname['registerClasses'],
+  deleteClasses: IBodyClassname['deleteClasses'],
 ] => {
-	const classContext = useContext(BodyClassnameContext);
+  const classContext = useContext(BodyClassnameContext);
 
-	return [
-		(name, classNames) => classContext.registerClasses(name, classNames),
-		name => classContext.deleteClasses(name),
-	];
+  return [
+    (name, classNames) => classContext.registerClasses(name, classNames),
+    name => classContext.deleteClasses(name),
+  ];
 };
 
 export default useBodyClassnames;

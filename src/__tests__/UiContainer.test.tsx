@@ -7,9 +7,9 @@ import UiGrid from '@ui/UiGrid/UiGrid';
 import skipTestCondition from '@utils/skipTestCondition';
 
 describe.skipIf(skipTestCondition('FRONTEND'))('UI container', () => {
-	test('Match snapshot', () => {
-		expect(render(<UiContainer>Container</UiContainer>)).toMatchSnapshot();
+  test('Match snapshot', () => {
+    expect(render(<UiContainer>Container</UiContainer>)).toMatchSnapshot();
 
-		expect(render(<UiGrid>Container</UiGrid>)).toMatchSnapshot();
-	});
+    expect(render(<UiGrid>Container</UiGrid>)).toMatchSnapshot();
+  });
 });

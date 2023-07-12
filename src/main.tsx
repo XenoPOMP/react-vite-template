@@ -9,19 +9,19 @@ import App from './App';
 import './main.scss';
 
 const queryClient = new QueryClient({
-	defaultOptions: {
-		queries: {
-			refetchOnWindowFocus: true,
-		},
-	},
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: true,
+    },
+  },
 });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-	<React.StrictMode>
-		<QueryClientProvider client={queryClient}>
-			<ReduxProvider store={store}>
-				<App />
-			</ReduxProvider>
-		</QueryClientProvider>
-	</React.StrictMode>
+  <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <ReduxProvider store={store}>
+        <App />
+      </ReduxProvider>
+    </QueryClientProvider>
+  </React.StrictMode>,
 );

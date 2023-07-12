@@ -14,10 +14,10 @@ import type { PortalProps } from './Portal.props';
  * @constructor
  */
 const Portal: FC<PropsWith<'children', PortalProps>> = ({
-	children,
-	enabled,
+  children,
+  enabled,
 }) => {
-	return enabled ? <>{children}</> : <></>;
+  return enabled ? <>{children}</> : <></>;
 };
 
 export default Portal;

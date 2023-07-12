@@ -13,34 +13,34 @@ import NotFound from '@pages/NotFound/NotFound';
  * @constructor
  */
 const AppRoutes: FC<{
-	pageTransitions?: boolean;
+  pageTransitions?: boolean;
 }> = ({ pageTransitions }) => {
-	const location = useLocation();
+  const location = useLocation();
 
-	/**
-	 * This component contains all application routes.
-	 *
-	 * Add new routes here.
-	 *
-	 * @constructor
-	 */
-	const RoutesNode: FC<unknown> = () => {
-		return (
-			<Routes location={location} key={location.pathname}>
-				<Route path={'*'} element={<NotFound />} />
+  /**
+   * This component contains all application routes.
+   *
+   * Add new routes here.
+   *
+   * @constructor
+   */
+  const RoutesNode: FC<unknown> = () => {
+    return (
+      <Routes location={location} key={location.pathname}>
+        <Route path={'*'} element={<NotFound />} />
 
-				<Route path={'/'} element={<MainPage />} />
-			</Routes>
-		);
-	};
+        <Route path={'/'} element={<MainPage />} />
+      </Routes>
+    );
+  };
 
-	return pageTransitions ? (
-		<AnimatePresence>
-			<RoutesNode key={location.pathname} />
-		</AnimatePresence>
-	) : (
-		<RoutesNode />
-	);
+  return pageTransitions ? (
+    <AnimatePresence>
+      <RoutesNode key={location.pathname} />
+    </AnimatePresence>
+  ) : (
+    <RoutesNode />
+  );
 };
 
 export default AppRoutes;

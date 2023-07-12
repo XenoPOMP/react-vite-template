@@ -35,19 +35,19 @@ import type { MasonryProps } from './Masonry.props';
  * </Masonry>
  */
 const Masonry: FC<
-	PropsWith<'className' | 'style' | 'id' | 'children', MasonryProps>
+  PropsWith<'className' | 'style' | 'id' | 'children', MasonryProps>
 > = ({ columns, className, style, id, children }) => {
-	return (
-		<div
-			className={cn(styles.masonry, className)}
-			style={
-				{ ...style, '--column-count': columns ? columns : 3 } as CSSProperties
-			}
-			id={id}
-		>
-			{children}
-		</div>
-	);
+  return (
+    <div
+      className={cn(styles.masonry, className)}
+      style={
+        { ...style, '--column-count': columns ? columns : 3 } as CSSProperties
+      }
+      id={id}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Masonry;

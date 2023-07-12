@@ -10,9 +10,9 @@ import skipTestCondition from '@utils/skipTestCondition';
  */
 
 describe.skipIf(skipTestCondition('FRONTEND'))('App layout', () => {
-	test('Render child', () => {
-		render(<Layout>Testing: 12</Layout>);
+  test('Render child', () => {
+    render(<Layout>Testing: 12</Layout>);
 
-		expect(screen.getByText(/Testing: 12/i)).toBeDefined();
-	});
+    expect(screen.getByText(/Testing: 12/i)).toBeDefined();
+  });
 });

@@ -6,8 +6,8 @@ import useEnv from '@hooks/useEnv';
 const { DOMAIN } = useEnv();
 
 export const socket: Socket = io(`ws://${DOMAIN}:80`, {
-	autoConnect: true,
-	reconnection: true,
+  autoConnect: true,
+  reconnection: true,
 });
 
 export const WebSocketContext = createContext<Socket>(socket);

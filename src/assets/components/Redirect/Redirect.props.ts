@@ -1,12 +1,12 @@
 import { NavigateOptions } from 'react-router-dom';
 
 export interface RedirectProps {
-	/** If true, redirect will happen. */
-	triggered?: boolean;
+  /** If true, redirect will happen. */
+  triggered?: boolean;
 
-	/** Redirect destination. */
-	to: string;
+  /** Redirect destination. */
+  to: string;
 
-	/** React-router-dom options. */
-	options?: NavigateOptions;
+  /** React-router-dom options. */
+  options?: NavigateOptions;
 }
