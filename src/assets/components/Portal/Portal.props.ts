@@ -1,3 +1,3 @@
 export interface PortalProps {
-	enabled: boolean;
+  enabled: boolean;
 }

@@ -14,15 +14,15 @@ import skipTestCondition from '@utils/skipTestCondition';
  */
 
 describe.skipIf(skipTestCondition('FRONTEND'))('Theme Provider', () => {
-	test('Classname', () => {
-		renderWithProviders(<ThemeProvider />, {
-			useRedux: true,
-		});
+  test('Classname', () => {
+    renderWithProviders(<ThemeProvider />, {
+      useRedux: true,
+    });
 
-		const selector = document.querySelector(
-			`div ${cn(styles.themes, styles.dark)}`
-		);
+    const selector = document.querySelector(
+      `div ${cn(styles.themes, styles.dark)}`,
+    );
 
-		expect(selector).toBeDefined();
-	});
+    expect(selector).toBeDefined();
+  });
 });

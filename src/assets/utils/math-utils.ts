@@ -4,5 +4,5 @@
  * @return {number}             summary of numbers
  */
 export const summary = (...items: number[]): number => {
-	return items.reduce((prev, next) => (prev += next), 0);
+  return items.reduce((prev, next) => (prev += next), 0);
 };
