@@ -7,15 +7,15 @@ import ThemeProvider from '@providers/ThemeProvider/ThemeProvider';
 import { PropsWith } from '@type/PropsWith';
 
 const GlobalProvider: FC<PropsWith<'children', {}>> = ({ children }) => {
-	return (
-		<>
-			<BodyClassnameProvider>
-				<SizesProvider>
-					<ThemeProvider>{children}</ThemeProvider>
-				</SizesProvider>
-			</BodyClassnameProvider>
-		</>
-	);
+  return (
+    <>
+      <BodyClassnameProvider>
+        <SizesProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </SizesProvider>
+      </BodyClassnameProvider>
+    </>
+  );
 };
 
 export default GlobalProvider;

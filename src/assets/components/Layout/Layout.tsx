@@ -13,11 +13,11 @@ import { LayoutProps } from './Layout.props';
  * @constructor
  */
 const Layout: FC<PropsWith<'children', LayoutProps>> = ({ children }) => {
-	return (
-		<GlobalProvider>
-			<main>{children}</main>
-		</GlobalProvider>
-	);
+  return (
+    <GlobalProvider>
+      <main>{children}</main>
+    </GlobalProvider>
+  );
 };
 
 export default Layout;

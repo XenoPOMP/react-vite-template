@@ -7,13 +7,13 @@ import { PropsWith } from '@type/PropsWith';
 import styles from './ThemeProvider.module.scss';
 
 const ThemeProvider: FC<PropsWith<'children', {}>> = ({ children }) => {
-	const classContext = useContext(BodyClassnameContext);
+  const classContext = useContext(BodyClassnameContext);
 
-	useEffect(() => {
-		classContext.registerClasses('theme', [styles.themes, styles.dark]);
-	}, []);
+  useEffect(() => {
+    classContext.registerClasses('theme', [styles.themes, styles.dark]);
+  }, []);
 
-	return <>{children}</>;
+  return <>{children}</>;
 };
 
 export default ThemeProvider;

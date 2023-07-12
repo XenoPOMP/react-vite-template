@@ -1,3 +1,3 @@
 export interface RadioProps {
-	name?: string;
+  name?: string;
 }

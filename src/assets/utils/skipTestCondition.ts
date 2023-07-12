@@ -9,11 +9,11 @@ const { TESTING_MODE } = useEnv();
  *                                 or current mode is FULLSTACK
  */
 const skipTestCondition = (mode: TestingMode): boolean => {
-	if (TESTING_MODE === 'FULLSTACK') {
-		return false;
-	}
+  if (TESTING_MODE === 'FULLSTACK') {
+    return false;
+  }
 
-	return TESTING_MODE !== mode;
+  return TESTING_MODE !== mode;
 };
 
 export { skipTestCondition as default };

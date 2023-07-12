@@ -12,24 +12,24 @@ import type { RedirectProps } from './Redirect.props';
  * @constructor
  */
 const Redirect: FC<RedirectProps> = ({ triggered, to, options }) => {
-	/** Navigation hook. */
-	const navigate = useNavigate();
+  /** Navigation hook. */
+  const navigate = useNavigate();
 
-	/** Default navigate options. */
-	const defaultOptions: typeof options = {
-		replace: true,
-		preventScrollReset: false,
-		...options,
-	};
+  /** Default navigate options. */
+  const defaultOptions: typeof options = {
+    replace: true,
+    preventScrollReset: false,
+    ...options,
+  };
 
-	/** Navigate to link if trigger is triggered. */
-	useEffect(() => {
-		if (!triggered) return;
+  /** Navigate to link if trigger is triggered. */
+  useEffect(() => {
+    if (!triggered) return;
 
-		navigate(to, defaultOptions);
-	}, [triggered, to]);
+    navigate(to, defaultOptions);
+  }, [triggered, to]);
 
-	return <></>;
+  return <></>;
 };
 
 export default Redirect;

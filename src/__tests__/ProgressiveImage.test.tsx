@@ -8,17 +8,17 @@ import skipTestCondition from '@utils/skipTestCondition';
 import mockImage from '@media/moks/fake-four-k-image.jpg';
 
 describe.skipIf(skipTestCondition('FRONTEND'))('Progressive image', () => {
-	test('Match snapshot', () => {
-		expect(
-			render(
-				<ProgressiveImage
-					loaderColorScheme={{
-						backgroundColor: 'transparent',
-						loaderColor: 'black',
-					}}
-					src={mockImage}
-				/>
-			)
-		).toMatchSnapshot();
-	});
+  test('Match snapshot', () => {
+    expect(
+      render(
+        <ProgressiveImage
+          loaderColorScheme={{
+            backgroundColor: 'transparent',
+            loaderColor: 'black',
+          }}
+          src={mockImage}
+        />,
+      ),
+    ).toMatchSnapshot();
+  });
 });

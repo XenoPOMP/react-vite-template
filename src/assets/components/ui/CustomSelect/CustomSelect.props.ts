@@ -5,27 +5,27 @@ import { MultiValue, SingleValue } from 'react-select';
  * Custom select`s option.
  */
 export type SelectOption = {
-	/** Value, meta-name of select option. */
-	value?: string;
+  /** Value, meta-name of select option. */
+  value?: string;
 
-	/** ReactNode that is being rendered instead
-	 * of value.
-	 */
-	label: ReactNode;
+  /** ReactNode that is being rendered instead
+   * of value.
+   */
+  label: ReactNode;
 
-	/** Color scheme of multi-value badge. */
-	multiColors?: {
-		background?: string;
-		font?: string;
-	};
+  /** Color scheme of multi-value badge. */
+  multiColors?: {
+    background?: string;
+    font?: string;
+  };
 
-	/** Color scheme of multi-value badge`s
-	 *  remove button.
-	 */
-	removeMultiColors?: {
-		background?: string;
-		icon?: string;
-	};
+  /** Color scheme of multi-value badge`s
+   *  remove button.
+   */
+  removeMultiColors?: {
+    background?: string;
+    icon?: string;
+  };
 };
 
 /**
@@ -33,15 +33,15 @@ export type SelectOption = {
  * type.
  */
 export type TypedSelectOption<Value extends SelectOption['value']> = {
-	value: Value;
+  value: Value;
 } & Omit<SelectOption, 'value'>;
 
 export interface CustomSelectProps {
-	options?: SelectOption[];
-	onChange?: (
-		option: SingleValue<SelectOption> | MultiValue<SelectOption>
-	) => any;
-	defaultValue?: SelectOption;
-	placeholder?: string;
-	isMulti?: boolean;
+  options?: SelectOption[];
+  onChange?: (
+    option: SingleValue<SelectOption> | MultiValue<SelectOption>,
+  ) => any;
+  defaultValue?: SelectOption;
+  placeholder?: string;
+  isMulti?: boolean;
 }

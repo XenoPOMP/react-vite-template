@@ -9,34 +9,34 @@ import styles from './ProgressiveImage.module.scss';
 import { ProgressiveImageProps } from './ProgressiveImage.props';
 
 const ProgressiveImage: FC<
-	PropsWith<'className' | 'style', ProgressiveImageProps>
+  PropsWith<'className' | 'style', ProgressiveImageProps>
 > = ({ src, alt, className, style, loaderColorScheme }) => {
-	const getInlineVariables = (): CSSProperties => {
-		const { backgroundColor } = loaderColorScheme;
+  const getInlineVariables = (): CSSProperties => {
+    const { backgroundColor } = loaderColorScheme;
 
-		return {
-			'--loader-background': backgroundColor,
-		} as CSSProperties;
-	};
+    return {
+      '--loader-background': backgroundColor,
+    } as CSSProperties;
+  };
 
-	// prettier-ignore
-	const [element, setElement] = useState<ReactElement>(
+  // prettier-ignore
+  const [element, setElement] = useState<ReactElement>(
     <div style={getInlineVariables()} className={cn(styles.loader)}>
 			<Loader type={'circle'} mainColor={loaderColorScheme.loaderColor} />
     </div>
   );
 
-	useEffect(() => {
-		const img = new Image();
-		img.src = src ? src : '';
-		img.onload = () => {
-			setElement(
-				<img className={cn(className)} src={src} alt={alt} style={style} />
-			);
-		};
-	}, [src]);
+  useEffect(() => {
+    const img = new Image();
+    img.src = src ? src : '';
+    img.onload = () => {
+      setElement(
+        <img className={cn(className)} src={src} alt={alt} style={style} />,
+      );
+    };
+  }, [src]);
 
-	return element;
+  return element;
 };
 
 export default ProgressiveImage;

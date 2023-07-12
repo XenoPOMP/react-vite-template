@@ -11,17 +11,17 @@ import skipTestCondition from '@utils/skipTestCondition';
  */
 
 describe.skipIf(skipTestCondition('FRONTEND'))('Page component', () => {
-	test('Child render', () => {
-		renderWithProviders(
-			<Page meta={{ title: 'Testing', description: '', keywords: '' }}>
-				<h1>Main page testing</h1>
-			</Page>,
-			{
-				useRedux: true,
-				useRouter: true,
-			}
-		);
+  test('Child render', () => {
+    renderWithProviders(
+      <Page meta={{ title: 'Testing', description: '', keywords: '' }}>
+        <h1>Main page testing</h1>
+      </Page>,
+      {
+        useRedux: true,
+        useRouter: true,
+      },
+    );
 
-		expect(screen.getByText(/Main page testing/i)).toBeDefined();
-	});
+    expect(screen.getByText(/Main page testing/i)).toBeDefined();
+  });
 });
