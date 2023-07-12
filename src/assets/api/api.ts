@@ -11,7 +11,7 @@ const BASE_URL = 'http://localhost:4200';
 /**
  * Default Axios instance.
  */
-export const axiosInstance = axios.create({
+const axiosInstance = axios.create({
   baseURL: BASE_URL,
 });
 
@@ -33,3 +33,5 @@ const requestRefresh: TokenRefreshRequest = async (
 const getStorage = getBrowserSessionStorage;
 
 applyAuthTokenInterceptor(axiosInstance, { requestRefresh, getStorage });
+
+export { axiosInstance };

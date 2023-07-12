@@ -11,14 +11,40 @@ describe.skipIf(skipTestCondition('FRONTEND'))('Progressive image', () => {
   test('Match snapshot', () => {
     expect(
       render(
+        <>
+          <ProgressiveImage
+            loaderColorScheme={{
+              backgroundColor: 'transparent',
+              loaderColor: 'black',
+            }}
+            src={mockImage}
+          />
+          <ProgressiveImage
+            loaderColorScheme={{
+              backgroundColor: 'transparent',
+              loaderColor: 'black',
+            }}
+          />
+        </>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  test('Element loading', () => {
+    const image = render(
+      <div>
         <ProgressiveImage
           loaderColorScheme={{
             backgroundColor: 'transparent',
             loaderColor: 'black',
           }}
           src={mockImage}
-        />,
-      ),
-    ).toMatchSnapshot();
+        />
+      </div>,
+    ).asFragment();
+
+    image.addEventListener('onload', ev => {
+      expect(image.querySelector('img')).toBeDefined();
+    });
   });
 });

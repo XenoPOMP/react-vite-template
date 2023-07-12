@@ -13,7 +13,7 @@ import skipTestCondition from '@utils/skipTestCondition';
 describe.skipIf(skipTestCondition('FRONTEND'))('Page component', () => {
   test('Child render', () => {
     renderWithProviders(
-      <Page meta={{ title: 'Testing', description: '', keywords: '' }}>
+      <Page meta={{ title: 'Testing', description: '', keywords: '' }} noIndex>
         <h1>Main page testing</h1>
       </Page>,
       {
