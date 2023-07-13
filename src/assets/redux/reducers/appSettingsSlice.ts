@@ -8,7 +8,7 @@ export type AppSettings = {
 };
 
 const initialState: AppSettings = {
-  appVersion: '0.01',
+  appVersion: '0.0.0',
   appName: 'React Vite Application',
 };
 
