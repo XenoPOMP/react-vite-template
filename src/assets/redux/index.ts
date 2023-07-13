@@ -16,9 +16,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { getPersistConfig } from 'redux-deep-persist';
 
-import appSettingsSlice, {
-  initialAppSettings,
-} from '@redux/reducers/appSettingsSlice';
+import appSettingsSlice from '@redux/reducers/appSettingsSlice';
 
 /** App`s root reducer. */
 const rootReducer = combineReducers({
