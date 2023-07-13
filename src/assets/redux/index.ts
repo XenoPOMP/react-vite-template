@@ -29,7 +29,6 @@ const rootReducer = combineReducers({
 const persistConfig = getPersistConfig({
   key: 'root',
   storage,
-  whitelist: ['appSettings'],
   blacklist: ['appSettings.appVersion', 'appSettings.appName'],
   rootReducer,
 });
