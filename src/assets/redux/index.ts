@@ -20,13 +20,12 @@ import appSettingsSlice, {
   initialAppSettings,
 } from '@redux/reducers/appSettingsSlice';
 
-/**
- * App`s root reducer.
- */
+/** App`s root reducer. */
 const rootReducer = combineReducers({
   appSettings: appSettingsSlice,
 });
 
+/** Redux-persist config. */
 const persistConfig = getPersistConfig({
   key: 'root',
   storage,
@@ -38,6 +37,7 @@ const persistConfig = getPersistConfig({
 /** Persisted reducer. All data changes will be saved in local storage. */
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
+/** Redux store. */
 const store = configureStore({
   reducer: persistedReducer,
   middleware: getDefaultMiddleware =>
@@ -47,15 +47,6 @@ const store = configureStore({
       },
     }),
 });
-
-// /**
-//  * Subscribe to update event.
-//  *
-//  * Save data to local storage.
-//  */
-// store.subscribe(() => {
-//   localStorage.setItem(cookieName, JSON.stringify(store.getState()));
-// });
 
 export const persistor = persistStore(store);
 export default store;
