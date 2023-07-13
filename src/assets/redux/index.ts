@@ -29,4 +29,7 @@ store.subscribe(() => {
   localStorage.setItem(cookieName, JSON.stringify(store.getState()));
 });
 
-export { store };
+export default store;
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

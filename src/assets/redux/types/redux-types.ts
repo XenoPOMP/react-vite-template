@@ -1,12 +1,3 @@
-import { AppSettings } from '@redux/reducers/appSettingsSlice';
-
-/**
- * Redux store interface.
- */
-interface IStore {
-  appSettings: AppSettings;
-}
-
 /**
  * Type for Redux action.
  *
@@ -16,5 +7,3 @@ export type ReduxAction<A> = {
   payload: A;
   type: string;
 };
-
-export default IStore;

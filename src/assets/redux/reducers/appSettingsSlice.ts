@@ -16,7 +16,7 @@ const appSettingsSlice = createSlice({
   name: 'appSettings',
   initialState,
   reducers: {
-    simpleAction(state, action: ReduxAction<any>) {},
+    simpleAction(state, action: ReduxAction<number>) {},
   },
 });
 

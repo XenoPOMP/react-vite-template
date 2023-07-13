@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider as ReduxProvider } from 'react-redux';
 
-import { store } from '@redux/index';
+import store from '@redux/index';
 
 import App from './App';
 import './main.scss';
