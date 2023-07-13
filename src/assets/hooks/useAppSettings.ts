@@ -1,25 +1,36 @@
-import { useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '@redux/hooks';
+import { AppSettings } from '@redux/reducers/appSettingsSlice';
+import { DeepPartial } from 'redux';
 
-import IStore from '@redux/types/redux-types';
-
-interface SettingController<T> {
+type SettingController<T> = {
   get: () => T;
   set: (newValue: T) => void;
-}
+} & (T extends boolean
+  ? {
+      toggle: () => void;
+    }
+  : {});
 
-interface IUseAppSettings {
-  appVersion: Omit<SettingController<string>, 'set'>;
-  appName: Omit<SettingController<string>, 'set'>;
+interface IUseAppSettings
+  extends Record<keyof AppSettings, DeepPartial<SettingController<any>>> {
+  appVersion: Omit<SettingController<AppSettings['appVersion']>, 'set'>;
+  appName: Omit<SettingController<AppSettings['appName']>, 'set'>;
 }
 
 const useAppSettings = (): IUseAppSettings => {
+  const { appVersion, appName }: AppSettings = useAppSelector(
+    state => state.appSettings,
+  );
+
+  const dispatch = useAppDispatch();
+
   return {
     appVersion: {
-      get: () => useSelector((state: IStore) => state.appSettings.appVersion),
+      get: () => appVersion,
     },
 
     appName: {
-      get: () => useSelector((state: IStore) => state.appSettings.appName),
+      get: () => appName,
     },
   };
 };

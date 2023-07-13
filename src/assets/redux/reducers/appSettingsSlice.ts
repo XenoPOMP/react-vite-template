@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { ReduxAction } from '@redux/types/redux-types';
+import { ReduxAction } from '@redux/types';
 
 export type AppSettings = {
   appVersion: string;
@@ -8,7 +8,7 @@ export type AppSettings = {
 };
 
 const initialState: AppSettings = {
-  appVersion: '0.01',
+  appVersion: '0.0.0',
   appName: 'React Vite Application',
 };
 
@@ -16,7 +16,7 @@ const appSettingsSlice = createSlice({
   name: 'appSettings',
   initialState,
   reducers: {
-    simpleAction(state, action: ReduxAction<any>) {},
+    simpleAction(state, action: ReduxAction<number>) {},
   },
 });
 
