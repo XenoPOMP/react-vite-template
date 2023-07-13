@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { ReduxAction } from '@redux/types/redux-types';
+import { ReduxAction } from '@redux/types';
 
 export type AppSettings = {
   appVersion: string;
