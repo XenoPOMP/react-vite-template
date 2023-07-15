@@ -4,6 +4,7 @@ import Page from '@components/Page/Page';
 
 import styles from './MainPage.module.scss';
 import SplashScreen from '@components/SplashScreen/SplashScreen';
+import UiContainer from '@ui/UiContainer/UiContainer';
 
 const MainPage = () => {
   return (
@@ -13,7 +14,9 @@ const MainPage = () => {
         description: 'Some description',
         keywords: '',
       }}
-    ></Page>
+    >
+      <UiContainer>1</UiContainer>
+    </Page>
   );
 };
 
