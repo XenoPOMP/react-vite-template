@@ -1,0 +1,11 @@
+@import "src/assets/styles/templates";
+
+.splashScreen {
+  @extend %flexCenter;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: var(--splash-screen);
+  background: white;
+}

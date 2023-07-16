@@ -36,5 +36,5 @@
 
 1. [Getting started](./.rvt/docs/GETTING-STARTED.md)
 2. [Available scripts](./.rvt/docs/AVAILABLE-SCRIPTS.md)
-3. [CLI](./.rvt/docs/CLI.md)
+3. [CLI](https://github.com/XenoPOMP/rvt-cli#readme)
 4. [Chrome Extension](./.rvt/docs/CHROME-EXT.md)

@@ -8,6 +8,7 @@ import store, { persistor } from '@redux/index';
 
 import App from './App';
 import './main.scss';
+import SplashScreen from '@components/SplashScreen/SplashScreen';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <ReduxProvider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
+        <PersistGate loading={<SplashScreen />} persistor={persistor}>
           <App />
         </PersistGate>
       </ReduxProvider>
