@@ -1,15 +1,9 @@
-import { fireEvent, screen } from '@testing-library/react';
-import { useDispatch } from 'react-redux';
-import { describe, expect, test, vitest } from 'vitest';
+import { fireEvent } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
 
-import TestingPage from '@pages/TestingPage/TestingPage';
-
-import { useAppDispatch } from '@redux/hooks';
-
-import useAppSettings from '@hooks/useAppSettings';
-
-import renderWithProviders from '@utils/renderWithProviders';
 import skipTestCondition from '@utils/skipTestCondition';
+
+import { defaultTestingPageRender } from './defaults';
 
 /**
  * Test useAppSettings hook.
@@ -17,17 +11,11 @@ import skipTestCondition from '@utils/skipTestCondition';
 
 describe.skipIf(skipTestCondition('FRONTEND'))('useAppSettings hook', () => {
   test('Match snapshot', () => {
-    expect(
-      renderWithProviders(<TestingPage />, {
-        useRedux: true,
-      })
-    ).toMatchSnapshot();
+    expect(defaultTestingPageRender()).toMatchSnapshot();
   });
 
   test('buttons` callback work right', () => {
-    const page = renderWithProviders(<TestingPage />, {
-      useRedux: true,
-    }).asFragment();
+    const page = defaultTestingPageRender().asFragment();
 
     const langText = page.querySelector('#lang-output');
     const buttons = page.querySelectorAll('button.lang-switch');

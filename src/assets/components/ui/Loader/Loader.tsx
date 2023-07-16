@@ -123,6 +123,7 @@ const Loader: FC<LoaderProps> = ({ type, className, mainColor }) => {
                   repeat: Infinity,
                 }}
                 className={cn(styles.line)}
+                key={`wave-element-${num}`}
               ></motion.div>
             );
           })}
