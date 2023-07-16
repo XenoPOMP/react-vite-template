@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider as ReduxProvider } from 'react-redux';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-import { store } from '@redux/index';
+import store from '@redux/index';
 
 /**
  * Render options for Vitest DOM wrapping

@@ -24,6 +24,8 @@
       "@redux/*": ["src/assets/redux/*"],
       "@styles/*": ["src/assets/styles/*"],
       "@providers/*": ["src/assets/providers/*"],
+      "@localization/*": ["src/assets/localization/*"],
+      "@locales/*": ["src/assets/localization/locales/*"],
       "@ui/*": ["src/assets/components/ui/*"],
       "@hooks/*": ["src/assets/hooks/*"],
       "@type/*": ["src/assets/types/*"],
