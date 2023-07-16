@@ -1,7 +1,9 @@
 <h1 align='center'>React Vite template </h1>
 
 <p align='center'>
-<a href="https://github.com/XenoPOMP/react-vite-template/releases/"><img src="https://img.shields.io/github/release/XenoPOMP/react-vite-template?include_prereleases=&sort=semver&color=blue" alt="GitHub release"></a>
+<a href="https://github.com/XenoPOMP/react-vite-template/releases/"><img src="https://img.shields.io/github/release/XenoPOMP/react-vite-template?include_prereleases=&sort=semver&color=blueviolet" alt="GitHub release"></a>
+<a href="#license"><img src="https://img.shields.io/badge/License-MIT-informational" alt="License"></a>
+<a href="https://github.com/XenoPOMP/react-vite-template/issues"><img src="https://img.shields.io/github/issues/XenoPOMP/react-vite-template" alt="issues - react-vite-template"></a>
 </p>
 
 <p align='center'>
