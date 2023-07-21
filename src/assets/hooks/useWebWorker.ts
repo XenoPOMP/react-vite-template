@@ -14,6 +14,7 @@ const workerHandler = <R>(func: WorkerFunction<R>) => {
  * Hook for using web workers.
  *
  * @param func
+ * @param {WorkerOptions} options       options of worker.
  *
  * @example
  * import { useWebWorker } from '@hooks/useWebWorker';
@@ -43,7 +44,8 @@ const workerHandler = <R>(func: WorkerFunction<R>) => {
  * };
  */
 export const useWebWorker = <Result>(
-  func: WorkerFunction<Result>
+  func: WorkerFunction<Result>,
+  options?: WorkerOptions
 ): {
   result?: Result;
   isLoading: boolean;
@@ -72,7 +74,8 @@ export const useWebWorker = <Result>(
    */
   const run: ReturnType<typeof useWebWorker>['run'] = args => {
     const worker = new Worker(
-      URL.createObjectURL(new Blob([`(${workerHandler})(${func})`]))
+      URL.createObjectURL(new Blob([`(${workerHandler})(${func})`])),
+      options
     );
     workerRef.current = worker;
     setIsLoading(true);
