@@ -29,4 +29,4 @@ jobs:
         env:
           COUNT_OF_LINE: ${{join(steps.calc_line_cont.outputs.*, '\n')}}
         run: |
-          echo ${{ env.COUNT_OF_LINE }}
+          echo $COUNT_OF_LINE
