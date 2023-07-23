@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install -y cloc
       - name: Get numbers
         run: |
-          echo "CODE_LINES=$(   ./cloc.sh --loc)" >> $GITHUB_ENV
+          echo "CODE_LINES=$(   .rvt/scripts/cloc.sh --loc)" >> $GITHUB_ENV
       - name: Debug
         run: |
           echo ${{ env.CODE_LINES }}
