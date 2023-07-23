@@ -28,7 +28,8 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install -y cloc
       - name: Get numbers
         run: |
-          echo "CODE_LINES=$(   sh .rvt/scripts/cloc.sh --loc)" >> $GITHUB_ENV
+          chmod +x .rvt/scripts/cloc.sh 
+          echo "CODE_LINES=$(   .rvt/scripts/cloc.sh --loc)" >> $GITHUB_ENV
       - name: Create Lines-of-Code-Badge
         uses: schneegans/dynamic-badges-action@v1.3.0
         with:
