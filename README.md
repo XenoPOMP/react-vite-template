@@ -8,6 +8,7 @@
 
 <p align='center'>
 <img src="https://github.com/XenoPOMP/react-vite-template/workflows/Testing/badge.svg" alt="Vitest passing" />
+<img src='https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/XenoPOMP/9ec79d308d96a8a6c90aab99479c4540/raw/loc.json' alt='Count of lines' />
 </p>
 
 <p align='center'>
