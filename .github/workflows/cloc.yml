@@ -22,10 +22,7 @@ jobs:
 
       # Runs djdefi/cloc-action
       - name: Count Lines of Code (cloc)
-        uses: mathiasvr/command-output@v2.0.0
-        id: cloc
-        with:
-          run: djdefi/cloc-action@5
+        uses: djdefi/cloc-action@5
 
       - name: Badge generation
         env:
