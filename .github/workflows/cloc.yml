@@ -27,6 +27,6 @@ jobs:
 
       - name: Badge generation
         env:
-          COUNT_OF_LINE: 500
+          COUNT_OF_LINE: ${{ steps.calc_line_cont.outputs }}
         run: |
           echo $COUNT_OF_LINE
