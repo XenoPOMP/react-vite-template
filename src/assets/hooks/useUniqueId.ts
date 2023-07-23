@@ -21,11 +21,17 @@ import { isUndefined } from '@utils/type-checks';
 export const useUniqueId = (
   transformer?: (generatedId: string) => string
 ): string => {
+  /** Generate UUID. */
   const id = uuid();
 
+  /**
+   * If transformer callback is defined, call it
+   * and return result of it.
+   */
   if (!isUndefined(transformer)) {
     return transformer(id);
   }
 
+  /** Return only ID if transformer is undefined. */
   return id;
 };
