@@ -6,7 +6,7 @@ import CheckBox from '@ui/CheckBox/CheckBox';
 
 import useAppSettings from '@hooks/useAppSettings';
 import useBoolean from '@hooks/useBoolean';
-import useCopyToClipboard from '@hooks/useCopyToClipboard';
+import { useUniqueId } from '@hooks/useUniqueId';
 
 import { TestingPageProps } from './TestingPage.props';
 
@@ -27,6 +27,9 @@ const TestingPage: FC<TestingPageProps> = ({}) => {
 
   const [checked, toggleCheck, setChecked] = useBoolean(false);
   const fakeTestBooleanHook = useBoolean(true);
+
+  const uuidWithoutTransformer = useUniqueId();
+  const uuidWithTransformer = useUniqueId(generatedId => `hook-${generatedId}`);
 
   return (
     <div>

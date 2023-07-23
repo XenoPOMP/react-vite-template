@@ -1,0 +1,1227 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UI Components > Match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="_checkBoxLabel_05fc2d"
+    >
+      <input
+        class="_boxInput_05fc2d"
+        type="checkbox"
+      />
+      <span
+        class="_mark_05fc2d"
+      >
+        <svg
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="15"
+            rx="2.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            class="_active_05fc2d"
+            height="15"
+            rx="2.5"
+            stroke="#0066FF"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+        </svg>
+      </span>
+      It is checkbox!
+    </label>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`UI Components > Match snapshot 2`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_fillActive_05fc2d"
+              fill="#0066FF"
+              height="15"
+              rx="2.5"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="_checkBoxLabel_05fc2d"
+    >
+      <input
+        checked=""
+        class="_boxInput_05fc2d"
+        type="checkbox"
+      />
+      <span
+        class="_mark_05fc2d"
+      >
+        <svg
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="_fillActive_05fc2d"
+            fill="#0066FF"
+            height="15"
+            rx="2.5"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            height="15"
+            rx="2.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            class="_active_05fc2d"
+            height="15"
+            rx="2.5"
+            stroke="#0066FF"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <path
+            class="_markIcon_05fc2d"
+            d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+            fill="white"
+          />
+          <path
+            class="_markIcon_05fc2d"
+            d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+            fill="white"
+          />
+        </svg>
+      </span>
+      It is checkbox!
+    </label>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`UI Components > Match snapshot 3`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_fillActive_05fc2d"
+              fill="#0066FF"
+              height="15"
+              rx="2.5"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          disabled=""
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_notActive_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="_checkBoxLabel_05fc2d"
+    >
+      <input
+        class="_boxInput_05fc2d"
+        disabled=""
+        type="checkbox"
+      />
+      <span
+        class="_mark_05fc2d"
+      >
+        <svg
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="_notActive_05fc2d"
+            height="15"
+            rx="2.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+        </svg>
+      </span>
+      It is checkbox!
+    </label>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`UI Components > Match snapshot 4`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_fillActive_05fc2d"
+              fill="#0066FF"
+              height="15"
+              rx="2.5"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          disabled=""
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_notActive_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          disabled=""
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_notActive_05fc2d _fillNotActive_05fc2d"
+              fill="#737674"
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="_checkBoxLabel_05fc2d"
+    >
+      <input
+        checked=""
+        class="_boxInput_05fc2d"
+        disabled=""
+        type="checkbox"
+      />
+      <span
+        class="_mark_05fc2d"
+      >
+        <svg
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="_notActive_05fc2d _fillNotActive_05fc2d"
+            fill="#737674"
+            height="15"
+            rx="2.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <path
+            class="_markIcon_05fc2d"
+            d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+            fill="white"
+          />
+          <path
+            class="_markIcon_05fc2d"
+            d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+            fill="white"
+          />
+        </svg>
+      </span>
+      It is checkbox!
+    </label>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`UI Components > Match snapshot 5`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_fillActive_05fc2d"
+              fill="#0066FF"
+              height="15"
+              rx="2.5"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_active_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          class="_boxInput_05fc2d"
+          disabled=""
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_notActive_05fc2d"
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_checkBoxLabel_05fc2d"
+      >
+        <input
+          checked=""
+          class="_boxInput_05fc2d"
+          disabled=""
+          type="checkbox"
+        />
+        <span
+          class="_mark_05fc2d"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_notActive_05fc2d _fillNotActive_05fc2d"
+              fill="#737674"
+              height="15"
+              rx="2.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M4.5 7.00004L9.00001 11.5L7.50001 13.0001L3 8.50004L4.5 7.00004Z"
+              fill="white"
+            />
+            <path
+              class="_markIcon_05fc2d"
+              d="M15 5.5L9.00001 11.5L7.49999 10L13.5 4L15 5.5Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        It is checkbox!
+      </label>
+    </div>
+    <div>
+      <label
+        class="_radio_db5d86"
+      >
+        <input
+          class="_radioButton_db5d86"
+          type="radio"
+        />
+        <span
+          class="_mark_db5d86"
+        >
+          <svg
+            class="_unChecked_db5d86"
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="15"
+              rx="7.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_outline_db5d86"
+              height="15"
+              rx="7.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+          </svg>
+          <svg
+            class="_checked_db5d86"
+            fill="none"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              class="_fill_db5d86"
+              fill="#0066FF"
+              height="15"
+              rx="7.5"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              height="15"
+              rx="7.5"
+              stroke="#737674"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_outline_db5d86"
+              height="15"
+              rx="7.5"
+              stroke="#0066FF"
+              width="15"
+              x="1.5"
+              y="1.5"
+            />
+            <rect
+              class="_icon_db5d86"
+              fill="white"
+              height="8"
+              rx="4"
+              width="8"
+              x="5"
+              y="5"
+            />
+          </svg>
+        </span>
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="_radio_db5d86"
+    >
+      <input
+        class="_radioButton_db5d86"
+        type="radio"
+      />
+      <span
+        class="_mark_db5d86"
+      >
+        <svg
+          class="_unChecked_db5d86"
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="15"
+            rx="7.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            class="_outline_db5d86"
+            height="15"
+            rx="7.5"
+            stroke="#0066FF"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+        </svg>
+        <svg
+          class="_checked_db5d86"
+          fill="none"
+          viewBox="0 0 18 18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="_fill_db5d86"
+            fill="#0066FF"
+            height="15"
+            rx="7.5"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            height="15"
+            rx="7.5"
+            stroke="#737674"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            class="_outline_db5d86"
+            height="15"
+            rx="7.5"
+            stroke="#0066FF"
+            width="15"
+            x="1.5"
+            y="1.5"
+          />
+          <rect
+            class="_icon_db5d86"
+            fill="white"
+            height="8"
+            rx="4"
+            width="8"
+            x="5"
+            y="5"
+          />
+        </svg>
+      </span>
+    </label>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

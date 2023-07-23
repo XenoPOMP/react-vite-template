@@ -1,7 +1,7 @@
 {
   "name": "react-vite-template",
   "private": true,
-  "version": "1.7.5",
+  "version": "1.7.6",
   "type": "module",
   "homepage": "./",
   "scripts": {
@@ -9,7 +9,7 @@
     "dev:host": "yarn dev --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "clear": "concurrently \"yarn clear:snaps\"",
+    "clear": "concurrently \"echo Nothing to clear.\"",
     "clear:snaps": "shx rm -rf \"src/__tests__/__snapshots__\"",
     "test": "yarn clear && vitest",
     "test:frontend": "cross-env VITE_TESTING_MODE=FRONTEND yarn test",
