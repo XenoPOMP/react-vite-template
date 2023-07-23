@@ -23,10 +23,10 @@ jobs:
       # Runs djdefi/cloc-action
       - name: Count Lines of Code (cloc)
         uses: djdefi/cloc-action@5
-        id: cloc
+        id: calc_line_cont
 
       - name: Badge generation
         env:
-          COUNT_OF_LINE: ${{ steps.cloc.outputs.stdout }}
+          COUNT_OF_LINE: ${{join(steps.calc_line_cont.outputs.*, '\n')}}
         run: |
           echo ${{ env.COUNT_OF_LINE }}
