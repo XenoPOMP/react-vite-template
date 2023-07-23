@@ -35,7 +35,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 9ec79d308d96a8a6c90aab99479c4540
-          filename: loc.json
+          filename: rvt-loc.json
           label: Lines of Code
           message: ${{ env.CODE_LINES }}
           color: 0000FF
