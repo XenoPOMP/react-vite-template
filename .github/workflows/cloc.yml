@@ -43,10 +43,12 @@ jobs:
           color: 0000FF
 
       - name: Publish Report
-        uses: turing85/publish-report@v1
-        if: ${{ always() }}
+        uses: actions/github-script@v6
         with:
-          cancel-workflow-on-error: 'false'
-          comment-header: Count of lines
-          comment-message-success: |  
-            There are ${{ env.CODE_LINES }} lines of code in project.
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
