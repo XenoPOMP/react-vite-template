@@ -7,6 +7,10 @@
 </p>
 
 <p align='center'>
+<img src="https://github.com/XenoPOMP/react-vite-template/workflows/Testing/badge.svg" alt="Vitest passing" />
+</p>
+
+<p align='center'>
 <a href="https://github.com/XenoPOMP/react-vite-template/generate"><img src="https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge" alt="Use this template"></a>
 </p>
 <hr>
