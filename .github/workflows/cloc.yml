@@ -18,6 +18,8 @@ jobs:
     permissions:
       # Required to checkout the code
       contents: read
+      checks: write        # Necessary to write reports
+      pull-requests: write # Necessary to comment on PRs
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,14 +42,11 @@ jobs:
           message: ${{ env.CODE_LINES }}
           color: 0000FF
 
-#      - name: 'Install Node'
-#        uses: actions/setup-node@v2
-#        with:
-#          node-version: '16.x'
-#      - name: 'Install Deps'
-#        run: npm i yarn cloc -g
-
-      # Runs djdefi/cloc-action
-#      - name: Count Lines of Code (cloc)
-#        uses: djdefi/cloc-action@5
-#        id: calc_line_cont
+      - name: Publish Report
+        uses: turing85/publish-report@v1
+        if: ${{ always() }}
+        with:
+          cancel-workflow-on-error: 'false'
+          comment-header: Count of lines
+          comment-message-success: |  
+            There are ${{ env.CODE_LINES }} lines of code in project.
