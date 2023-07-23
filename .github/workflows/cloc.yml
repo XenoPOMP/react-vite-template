@@ -26,6 +26,6 @@ jobs:
 
       - name: Badge generation
         env:
-          COUNT_OF_LINE: ${{steps.count_lines_of_code_(cloc)}}
+          COUNT_OF_LINE: ${{steps.count_lines_of_code_cloc}}
         run: |
           echo "${{env.COUNT_OF_LINE}}"
