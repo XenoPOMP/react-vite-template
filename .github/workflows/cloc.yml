@@ -20,13 +20,35 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Download cloc
+        run: sudo apt-get update -y && sudo apt-get install -y cloc
+      - name: Get numbers
+        run: |
+          echo "CODE_LINES=$(   ./cloc.sh --loc)" >> $GITHUB_ENV
+      - name: Create Lines-of-Code-Badge
+        uses: schneegans/dynamic-badges-action@v1.3.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 9ec79d308d96a8a6c90aab99479c4540
+          filename: loc.json
+          label: Lines of Code
+          message: ${{ env.CODE_LINES }}
+          color: lightgrey
+
+#      - name: 'Install Node'
+#        uses: actions/setup-node@v2
+#        with:
+#          node-version: '16.x'
+#      - name: 'Install Deps'
+#        run: npm i yarn cloc -g
+
       # Runs djdefi/cloc-action
-      - name: Count Lines of Code (cloc)
-        uses: djdefi/cloc-action@5
-        id: calc_line_cont
+#      - name: Count Lines of Code (cloc)
+#        uses: djdefi/cloc-action@5
+#        id: calc_line_cont
 
       - name: Badge generation
         env:
-          COUNT_OF_LINE: ${{ steps.calc_line_cont }}
+          COUNT_OF_LINE: 0
         run: |
           echo $COUNT_OF_LINE
