@@ -38,7 +38,7 @@ jobs:
           filename: loc.json
           label: Lines of Code
           message: ${{ env.CODE_LINES }}
-          color: purple
+          color: blue
 
 #      - name: 'Install Node'
 #        uses: actions/setup-node@v2
