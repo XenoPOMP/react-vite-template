@@ -27,7 +27,7 @@ jobs:
           echo "CODE_LINES=$(   ./cloc.sh --loc)" >> $GITHUB_ENV
       - name: Debug
         run: |
-          echo $GITHUB_ENV
+          echo ${{ env.CODE_LINES }}
       - name: Create Lines-of-Code-Badge
         uses: schneegans/dynamic-badges-action@v1.3.0
         with:
