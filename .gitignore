@@ -18,8 +18,8 @@ dist-ssr
 *.local
 
 # Vitest
-coverage/**
-**/__snapshots__/**
+coverage/*
+!coverage/coverage*.json
 *.snap
 **/*timestamp*
 
