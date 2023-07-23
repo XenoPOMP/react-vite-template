@@ -15,8 +15,7 @@
     "test:frontend": "cross-env VITE_TESTING_MODE=FRONTEND yarn test",
     "test:backend": "cross-env VITE_TESTING_MODE=BACKEND yarn test",
     "test:fullstack": "cross-env VITE_TESTING_MODE=FULLSTACK yarn test",
-    "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK yarn clear && vitest run --coverage",
-    "cloc": "cloc --git --loc ."
+    "coverage": "cross-env VITE_TESTING_MODE=FULLSTACK yarn clear && vitest run --coverage"
   },
   "dependencies": {
     "@pacote/react-use-outside": "^2.0.1",
