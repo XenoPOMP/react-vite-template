@@ -12,14 +12,14 @@ import ArgumentError from '@errors/ArgumentError';
  * @param [props]       animation parameters
  * @returns {void}
  */
-export const smoothScroll = (
+const smoothScroll = (
   id: string,
   props?: {
     duration?: number;
     delay?: number;
     ease?: EasingDefinition;
     offset?: number;
-  },
+  }
 ) => {
   if (/^.+#/i.test(id)) {
     throw new ArgumentError(`wrong format of id (expected #... or ...`);
@@ -32,3 +32,5 @@ export const smoothScroll = (
     offset: props?.offset ? props?.offset : -50,
   });
 };
+
+export default smoothScroll;
