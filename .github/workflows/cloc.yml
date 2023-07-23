@@ -29,7 +29,7 @@ jobs:
       - name: Get numbers
         run: |
           chmod +x .rvt/scripts/cloc.sh 
-          echo "CODE_LINES=$(   .rvt/scripts/cloc.sh --loc)" >> $GITHUB_ENV
+          echo "CODE_LINES=$(   .rvt/scripts/cloc.sh --loc --not-match-f='yarn.lock')" >> $GITHUB_ENV
       - name: Create Lines-of-Code-Badge
         uses: schneegans/dynamic-badges-action@v1.3.0
         with:
