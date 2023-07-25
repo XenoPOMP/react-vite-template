@@ -4,7 +4,7 @@ interface BaseOverlayProps
   extends PropsWith<'children' | 'className' | 'id', {}> {}
 
 export interface OverlayProps extends BaseOverlayProps {
-  backdrop: {
+  backdrop?: {
     blurAmount?: number;
     blurColor?: string;
   };

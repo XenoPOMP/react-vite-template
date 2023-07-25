@@ -5,12 +5,14 @@ import { tw } from 'tailwindcss-typescript';
 import useBodyClassnames from '@hooks/useBodyClassnames';
 import { useUniqueId } from '@hooks/useUniqueId';
 
+import { isUndefined } from '@utils/type-checks';
+
 import styles from './Overlay.module.scss';
 import type { OverlayProps } from './Overlay.props';
 
 interface OverlayStyles extends CSSProperties {
-	'--blur-amount'?: string;
-	'--blur-color'?: string;
+  '--blur-amount'?: string;
+  '--blur-color'?: string;
 }
 
 /**
@@ -27,56 +29,58 @@ interface OverlayStyles extends CSSProperties {
  * @constructor
  */
 const Overlay: FC<OverlayProps> = ({
-	className,
-	id,
-	backdrop,
-	trigger,
-	flexCenter,
-	children,
-	blockScroll,
+  className,
+  id,
+  backdrop,
+  trigger,
+  flexCenter,
+  children,
+  blockScroll,
 }) => {
-	const getStyles = (): OverlayStyles => {
-		const { blurColor, blurAmount } = backdrop;
+  const getStyles = (): OverlayStyles => {
+    return !isUndefined(backdrop)
+      ? {
+          '--blur-amount': backdrop.blurAmount
+            ? `${backdrop.blurAmount}px`
+            : '0px',
+          background: backdrop.blurColor,
+        }
+      : {};
+  };
 
-		return {
-			'--blur-amount': blurAmount ? `${blurAmount}px` : '0px',
-			background: blurColor,
-		};
-	};
+  const [registerClasses, deleteClasses] = useBodyClassnames();
+  const generatedId = useUniqueId();
 
-	const [registerClasses, deleteClasses] = useBodyClassnames();
-	const generatedId = useUniqueId();
+  useEffect(() => {
+    const name: string = `overlay-${id ?? generatedId}`;
 
-	useEffect(() => {
-		const name: string = `overlay-${id ?? generatedId}`;
+    if (trigger && blockScroll) {
+      registerClasses(name, [tw('overflow-hidden')]);
+      return;
+    }
 
-		if (trigger && blockScroll) {
-			registerClasses(name, [tw('overflow-hidden')]);
-			return;
-		}
+    return () => {
+      deleteClasses(name);
+    };
+  }, [trigger, blockScroll]);
 
-		return () => {
-			deleteClasses(name);
-		};
-	}, [trigger, blockScroll]);
-
-	return (
-		<>
-			{trigger && (
-				<div
-					style={getStyles()}
-					className={cn(
-						styles.overlay,
-						flexCenter ? styles.flexCenter : '',
-						className
-					)}
-					id={id}
-				>
-					{children}
-				</div>
-			)}
-		</>
-	);
+  return (
+    <>
+      {trigger && (
+        <div
+          style={getStyles()}
+          className={cn(
+            styles.overlay,
+            flexCenter ? styles.flexCenter : '',
+            className
+          )}
+          id={id}
+        >
+          {children}
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Overlay;
