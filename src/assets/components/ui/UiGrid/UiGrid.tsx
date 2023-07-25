@@ -1,7 +1,7 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { FC } from 'react';
-
-import { PropsWith } from '@type/PropsWith';
 
 import getUiSx from '@utils/getUiSx';
 

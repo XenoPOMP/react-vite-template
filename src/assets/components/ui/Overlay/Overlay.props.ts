@@ -1,12 +1,7 @@
-import { Modify } from '@type/Modify';
-import { PropsWith } from '@type/PropsWith';
+import { Modify, PropsWith } from '@xenopomp/advanced-types';
 
 export interface OverlayProps
-  extends Modify<
-    PropsWith<'children' | 'className' | 'id', {}>,
-    'id',
-    Required<PropsWith<'children' | 'className' | 'id', {}>['id']>
-  > {
+  extends PropsWith<'children' | 'className' | 'id', {}> {
   backdrop: {
     blurAmount?: number;
     blurColor?: string;

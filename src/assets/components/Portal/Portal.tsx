@@ -1,7 +1,7 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { FC, PropsWithChildren } from 'react';
-
-import { PropsWith } from '@type/PropsWith';
 
 import styles from './Portal.module.scss';
 import type { PortalProps } from './Portal.props';

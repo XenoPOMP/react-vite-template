@@ -1,8 +1,8 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import { FC, useContext, useEffect } from 'react';
 
 import { BodyClassnameContext } from '@providers/BodyClassnameProvider/BodyClassnameProvider';
-
-import { PropsWith } from '@type/PropsWith';
 
 import styles from './ThemeProvider.module.scss';
 

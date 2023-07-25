@@ -1426,6 +1426,13 @@
     loupe "^2.3.6"
     pretty-format "^29.5.0"
 
+"@xenopomp/advanced-types@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.0.1.tgz#097a115bdc47e5a18943658460b5acc633a97996"
+  integrity sha512-3ObqvsKxhi+HNuacZgW3esZhSQEln3JBmrdKKrf6f178piHs5dZKAVeAmZlo3NMPacGEbDs5klacGLtJfewg0A==
+  dependencies:
+    react "^18.2.0"
+
 abab@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.6.tgz#41b80f2c871d19686216b82309231cfd3cb3d291"

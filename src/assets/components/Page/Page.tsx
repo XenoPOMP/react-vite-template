@@ -1,3 +1,5 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import Helmet from 'react-helmet';
 
@@ -6,7 +8,6 @@ import Layout from '@components/Layout/Layout';
 import useAppSettings from '@hooks/useAppSettings';
 
 import { MetaInfo } from '@type/MetaInfo';
-import { PropsWith } from '@type/PropsWith';
 
 import { PageProps } from './Page.props';
 

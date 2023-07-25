@@ -1,7 +1,7 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { FC, PropsWithChildren, useRef } from 'react';
-
-import { PropsWith } from '@type/PropsWith';
 
 import styles from './CheckBox.module.scss';
 import type { CheckBoxProps } from './CheckBox.props';

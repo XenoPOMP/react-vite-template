@@ -1,7 +1,7 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import { FC, PropsWithChildren, useEffect } from 'react';
 import Media from 'react-media';
-
-import { PropsWith } from '@type/PropsWith';
 
 import ArgumentError from '@errors/ArgumentError';
 

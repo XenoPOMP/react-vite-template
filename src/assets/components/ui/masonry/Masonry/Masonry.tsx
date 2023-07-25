@@ -1,7 +1,7 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { CSSProperties, FC } from 'react';
-
-import { PropsWith } from '@type/PropsWith';
 
 import styles from './Masonry.module.scss';
 import type { MasonryProps } from './Masonry.props';

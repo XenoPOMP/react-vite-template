@@ -1,8 +1,8 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { FC } from 'react';
 import { ArgumentsType } from 'vitest';
-
-import { PropsWith } from '@type/PropsWith';
 
 import styles from './RunningLine.module.scss';
 import { RunningLineProps } from './RunningLine.props';
@@ -44,7 +44,7 @@ const RunningLine: FC<
       className={cn(
         className,
         styles.runningLine,
-        verticalAlign ? styles.vAlign : '',
+        verticalAlign ? styles.vAlign : ''
       )}
     >
       {children}

@@ -1,8 +1,8 @@
+import { PropsWith } from '@xenopomp/advanced-types';
+
 import cn from 'classnames';
 import { FC } from 'react';
 import Select, { GroupBase, StylesConfig } from 'react-select';
-
-import { PropsWith } from '@type/PropsWith';
 
 import type { CustomSelectProps, SelectOption } from './CustomSelect.props';
 
