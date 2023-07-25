@@ -1426,12 +1426,13 @@
     loupe "^2.3.6"
     pretty-format "^29.5.0"
 
-"@xenopomp/advanced-types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.0.1.tgz#097a115bdc47e5a18943658460b5acc633a97996"
-  integrity sha512-3ObqvsKxhi+HNuacZgW3esZhSQEln3JBmrdKKrf6f178piHs5dZKAVeAmZlo3NMPacGEbDs5klacGLtJfewg0A==
+"@xenopomp/advanced-types@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.0.2.tgz#b1498d40ff785d6102d4ece9b1717af7553ad902"
+  integrity sha512-5IwzBkXx9lHWnY7fPPE0xfOaZ4mwTqt+zeuITTZ+uM7yB41lBnIClDX/b38GOPtvajWdTNitNKD7NyU7TnLQLw==
   dependencies:
     react "^18.2.0"
+    redux "^4.2.1"
 
 abab@^2.0.6:
   version "2.0.6"
