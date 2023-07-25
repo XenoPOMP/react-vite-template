@@ -1,7 +1,9 @@
-import { Modify, PropsWith } from '@xenopomp/advanced-types';
+import { PropsWith } from '@xenopomp/advanced-types';
 
-export interface OverlayProps
-  extends PropsWith<'children' | 'className' | 'id', {}> {
+interface BaseOverlayProps
+  extends PropsWith<'children' | 'className' | 'id', {}> {}
+
+export interface OverlayProps extends BaseOverlayProps {
   backdrop: {
     blurAmount?: number;
     blurColor?: string;
