@@ -1,4 +1,4 @@
-import { MetaInfo } from '@xenopomp/react-essentials';
+import { MetaInfo } from '@xenopomp/advanced-types';
 
 export interface PageProps {
   meta: MetaInfo;

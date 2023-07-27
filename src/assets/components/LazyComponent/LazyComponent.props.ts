@@ -1,6 +1,6 @@
-import { ComponentType, ReactNode } from 'react';
+import { EsmImport } from '@xenopomp/advanced-types';
 
-import { EsmImport } from '@type/EsmImport';
+import { ComponentType, ReactNode } from 'react';
 
 export interface LazyComponentProps {
   element: EsmImport;

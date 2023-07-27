@@ -1,4 +1,4 @@
-import { EsmImport } from '@xenopomp/react-essentials';
+import { EsmImport } from '@xenopomp/advanced-types';
 
 import { FC, ReactNode, Suspense, lazy } from 'react';
 

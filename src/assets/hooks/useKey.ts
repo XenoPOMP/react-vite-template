@@ -1,4 +1,4 @@
-import { KeyCodes } from '@xenopomp/react-essentials';
+import { KeyCodes } from '@xenopomp/advanced-types';
 
 import { KeyboardEvent, useEffect, useRef } from 'react';
 

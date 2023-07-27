@@ -1,6 +1,7 @@
+import { DeepPartial } from 'redux';
+
 import { useAppDispatch, useAppSelector } from '@redux/hooks';
 import { AppSettings, changeLang } from '@redux/reducers/appSettingsSlice';
-import { DeepPartial } from 'redux';
 
 type SettingController<T> = {
   get: () => T;
@@ -20,7 +21,7 @@ interface IUseAppSettings
 
 const useAppSettings = (): IUseAppSettings => {
   const { appVersion, appName, language }: AppSettings = useAppSelector(
-    state => state.appSettings,
+    state => state.appSettings
   );
 
   const dispatch = useAppDispatch();

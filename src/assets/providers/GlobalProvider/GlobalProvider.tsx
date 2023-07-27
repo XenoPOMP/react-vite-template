@@ -1,4 +1,4 @@
-import { PropsWith } from '@xenopomp/react-essentials';
+import { PropsWith } from '@xenopomp/advanced-types';
 
 import { FC } from 'react';
 

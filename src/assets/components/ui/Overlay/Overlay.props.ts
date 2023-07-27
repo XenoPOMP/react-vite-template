@@ -1,4 +1,4 @@
-import { PropsWith } from '@xenopomp/react-essentials';
+import { PropsWith } from '@xenopomp/advanced-types';
 
 interface BaseOverlayProps
   extends PropsWith<'children' | 'className' | 'id', {}> {}
