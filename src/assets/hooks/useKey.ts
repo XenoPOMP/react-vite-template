@@ -1,6 +1,6 @@
-import { KeyboardEvent, useEffect, useRef } from 'react';
+import { KeyCodes } from '@xenopomp/react-essentials';
 
-import { KeyCodes } from '@type/KeyCodes';
+import { KeyboardEvent, useEffect, useRef } from 'react';
 
 /**
  * Hook for keyboard event handling.
@@ -22,7 +22,7 @@ export const useKey = (
   options?: {
     control?: boolean;
     shift?: boolean;
-  },
+  }
 ) => {
   const callbackRef = useRef<Parameters<typeof useKey>[1]>(callback);
 

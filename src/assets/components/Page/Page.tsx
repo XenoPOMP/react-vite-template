@@ -1,4 +1,4 @@
-import { PropsWith } from '@xenopomp/react-essentials';
+import { MetaInfo, PropsWith } from '@xenopomp/react-essentials';
 
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import Helmet from 'react-helmet';
@@ -6,8 +6,6 @@ import Helmet from 'react-helmet';
 import Layout from '@components/Layout/Layout';
 
 import useAppSettings from '@hooks/useAppSettings';
-
-import { MetaInfo } from '@type/MetaInfo';
 
 import { PageProps } from './Page.props';
 

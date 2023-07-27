@@ -1,6 +1,6 @@
-import { FC, ReactNode, Suspense, lazy } from 'react';
+import { EsmImport } from '@xenopomp/react-essentials';
 
-import { EsmImport } from '@type/EsmImport';
+import { FC, ReactNode, Suspense, lazy } from 'react';
 
 import type { LazyComponentProps } from './LazyComponent.props';
 
