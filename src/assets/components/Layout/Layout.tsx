@@ -1,8 +1,8 @@
+import { PropsWith } from '@xenopomp/react-essentials';
+
 import { FC } from 'react';
 
 import GlobalProvider from '@providers/GlobalProvider/GlobalProvider';
-
-import { PropsWith } from '@type/PropsWith';
 
 import { LayoutProps } from './Layout.props';
 

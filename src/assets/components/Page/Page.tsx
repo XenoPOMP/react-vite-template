@@ -1,4 +1,4 @@
-import { PropsWith } from '@xenopomp/advanced-types';
+import { PropsWith } from '@xenopomp/react-essentials';
 
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import Helmet from 'react-helmet';

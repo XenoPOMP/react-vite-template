@@ -1426,13 +1426,20 @@
     loupe "^2.3.6"
     pretty-format "^29.5.0"
 
-"@xenopomp/advanced-types@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.0.2.tgz#b1498d40ff785d6102d4ece9b1717af7553ad902"
-  integrity sha512-5IwzBkXx9lHWnY7fPPE0xfOaZ4mwTqt+zeuITTZ+uM7yB41lBnIClDX/b38GOPtvajWdTNitNKD7NyU7TnLQLw==
+"@xenopomp/advanced-types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@xenopomp/advanced-types/-/advanced-types-1.0.4.tgz#1e19d1abbe95ba3e682c8196bf52bd761448bb17"
+  integrity sha512-bXg+2h5K1SMsOJ3msj9PyZ8xajUHY2Hp3hR70WnPif+uJcxlFhu1FDXe92pHP9sVA2QUrvv1ZE+mFE24W2fEuA==
   dependencies:
     react "^18.2.0"
     redux "^4.2.1"
+
+"@xenopomp/react-essentials@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@xenopomp/react-essentials/-/react-essentials-1.0.0.tgz#4abaf607f2adf4b66af00d9224ce2b1c5982d819"
+  integrity sha512-1w8gmuHVXJETaBrC5lAX6QU/BtFr9ezTiyPigrRMI3aA8LsfCOFYvdUkxFVeoPESCiREgPo+y4BNXfPlnIBNXw==
+  dependencies:
+    "@xenopomp/advanced-types" "^1.0.4"
 
 abab@^2.0.6:
   version "2.0.6"
